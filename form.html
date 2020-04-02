@@ -27,98 +27,98 @@
         </nav>
     </header>
     <main>
-        <section>
-            <h1>Вязание на заказ</h1>
+        <section class="page-title__wrapper">
+            <h1 class="page-title">Вязание на заказ</h1>
         </section>
-        <p>Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form action="">
-            <fieldset>
-                <legend>Тип</legend>
-                <ul>
-                    <li>
-                        <input type="radio" name="" id="">
-                        <label for="">Аксессуар для интерьера</label>
+        <p class="page-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form action="https://echo.htmlacademy.ru" method="GET">
+            <fieldset class="type">
+                <legend class="type-title">Тип</legend>
+                <ul class="type-list">
+                    <li class="type-item type-item--accessory">
+                        <input type="radio" name="type-accessory" id="accessory">
+                        <label for="type-accessory">Аксессуар для интерьера</label>
                     </li>
-                    <li>
-                        <input type="radio" name="" id="">
-                        <label for="">Детская игрушка</label>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset>
-                <legend>Цвет</legend>
-                <ul>
-                    <li>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Белый</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Серый</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="" id="">
-                        <label for="">«Тиффани»</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Черный</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Розовый</label>
-                    </li>
-                    <li>
-                        <input type="checkbox" name="" id="">
-                        <label for="">Оранжевый</label>
+                    <li class="type-item type-item--toy">
+                        <input type="radio" name="type-toy" id="toy">
+                        <label for="type-toy">Детская игрушка</label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
-                <legend>ФИО</legend>
-                <ul>
-                    <li>
-                        <label for="">Имя</label>
-                        <input type="text" name="" id="" placeholder="Введите ваше имя*">
+            <fieldset class="color">
+                <legend class="color-title">Цвет</legend>
+                <ul class="color-list">
+                    <li class="color-item color-item--white">
+                        <input class="color-checkbox color-checkbox--white" type="checkbox" name="white" id="white">
+                        <label class="color-name color-name--white" for="white">Белый</label>
                     </li>
-                    <li>
-                        <label for="">Фамилия</label>
-                        <input type="text" name="" id="" placeholder="Укажите фамилию">
+                    <li class="color-item color-item--grey">
+                        <input class="color-checkbox color-checkbox--grey" type="checkbox" name="grey" id="grey">
+                        <label class="color-name color-name--grey" for="grey">Серый</label>
                     </li>
-                    <li>
-                        <label for="">Отчество</label>
-                        <input type="text" name="" id="" placeholder="Отчество, если желаете">
+                    <li class="color-item color-item--tiffany">
+                        <input class="color-checkbox color-checkbox--tiffany" type="checkbox" name="tiffany" id="tiffany">
+                        <label class="color-name color-name--tiffany" for="tiffany">«Тиффани»</label>
+                    </li>
+                    <li class="color-item color-item--black">
+                        <input class="color-checkbox color-checkbox--black" type="checkbox" name="black" id="black">
+                        <label class="color-name color-name--black" for="black ">Черный</label>
+                    </li>
+                    <li class="color-item color-item--Pink">
+                        <input class="color-checkbox color-checkbox--Pink" type="checkbox" name="Pink" id="Pink">
+                        <label class="color-name color-name--Pink" for="Pink">Розовый</label>
+                    </li>
+                    <li class="color-item color-item--Orange">
+                        <input class="color-checkbox color-checkbox--Orange" type="checkbox" name="Orange" id="Orange">
+                        <label class="color-name color-name--Orange" for="Orange ">Оранжевый</label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset>
-                <legend>Тел</legend>
-                <input type="text" name="" id="" placeholder="+7 XXX XXX XX XX*">
+            <fieldset class="passport">
+                <legend class="passport-title">ФИО</legend>
+                <ul class="passport-list">
+                    <li class="passport-item">
+                        <label class="passport-item__title passport-item__title--name" for="name">Имя</label>
+                        <input class="passport-item__input passport-item__input--name" type="text " name="name" id="name" placeholder="Введите ваше имя*">
+                    </li>
+                    <li class="passport-item">
+                        <label class="passport-item__title passport-item__title--surname" for="surname">Фамилия</label>
+                        <input class="passport-item__input passport-item__input--surname" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
+                    </li>
+                    <li class="passport-item">
+                        <label class="passport-item__title passport-item__title--patronymic" for="patronymic ">Отчество</label>
+                        <input class="passport-item__input passport-item__input--patronymic" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+                    </li>
+                </ul>
             </fieldset>
-            <fieldset>
-                <legend>E-mail</legend>
-                <input type="text" name="" id="" placeholder="Ваш Email*">
+            <fieldset class="phone">
+                <legend class="phone-title">Тел</legend>
+                <input class="phone-input" type="text" name="tel" placeholder="+7 XXX XXX XX XX* ">
             </fieldset>
-            <fieldset>
-                <legend>Доп</legend>
-                <textarea name="" id="" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <fieldset class="mail">
+                <legend class="mail-title">E-mail</legend>
+                <input class="mail-input" type="text" name="mail" placeholder="Ваш Email* ">
             </fieldset>
-            <p>*Поля обязательны для заполнения</p>
-            <button type="submit">Отправить заказ</button>
+            <fieldset class="wish">
+                <legend class="wish-title">Доп</legend>
+                <textarea class="wish-text" name="wish" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+            <p class="note">*Поля обязательны для заполнения</p>
+            <button class="order-btn" type="submit">Отправить заказ</button>
         </form>
     </main>
     <footer class="page-footer">
-        <div class="page-footer__logo-wrapper">
-            <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="101" height="34" alt="MISHKA - магазин игрушек ручной работы"></a>
+        <div class="page-footer__logo-wrapper ">
+            <a class="page-footer__logo " href="index.html "><img class="page-footer__logo-image " src="https://via.placeholder.com/150x150 " width="101 " height="34 " alt="MISHKA - магазин игрушек ручной работы "></a>
         </div>
-        <ul class="page-footer__list social-list">
-            <li class="social-list__item"><a href="https://www.instagram.com">Инстограмм</a></li>
-            <li class="social-list__item"><a href="https://www.facebook.com/">Фейсбук</a></li>
-            <li class="social-list__item"><a href="https://twitter.com/">Твиттер</a></li>
+        <ul class="page-footer__list social-list ">
+            <li class="social-list__item "><a href="https://www.instagram.com ">Инстограмм</a></li>
+            <li class="social-list__item "><a href="https://www.facebook.com/ ">Фейсбук</a></li>
+            <li class="social-list__item "><a href="https://twitter.com/ ">Твиттер</a></li>
         </ul>
-        <div class="page-footer__copyright">
-            <span class="copyright__title">Разработано</span>
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/150x150" width="27" height="34" alt=""></a>
+        <div class="page-footer__copyright ">
+            <span class="copyright__title ">Разработано</span>
+            <a class="copyright__link " href="https://htmlacademy.ru/intensive/adaptive "><img src="https://via.placeholder.com/150x150 " width="27 " height="34 " alt=" "></a>
         </div>
     </footer>
 </body>
