@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Каталог товаров - MISHKA</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <a class="page-header__logo" href="index.html">
+            <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="86" height="35" alt="MISHKA - магазин игрушек ручной работы">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item"><a href="#">Каталог товаров</a></li>
+                    <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+                </ul>
+                <ul class="main-nav__list user-list">
+                    <li class="user-list__item"><a href="#">Поиск по сайту</a></li>
+                    <li class="user-list__item"><a href="#">Корзина: <span class="user-list__basket-status">пока пуста</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <div class="page-title__wrapper">
+            <h1 class="page-title">Каталог товаров</h1>
+        </div>
+        <article class="card-product">
+            <a class="card-product__link" href="#">
+                <div class="card-product__picture">
+                    <img class="card-product__picture-img" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Зайчик-попрыгайчик">
+                </div>
+                <div class="card-product__desc">
+                    <h2 class="card-product__name">Зайчик-попрыгайчик</h2>
+                    <p class="card-product__parameters">Рост 30 см, вес 200 г</p>
+                    <span class="card-product__price">1 200 руб.</span>
+                    <a class="card-product__order-btn" href="#">В корзину</a>
+                </div>
+            </a>
+        </article>
+        <article class="card-product">
+            <a class="card-product__link" href="#">
+                <div class="card-product__picture">
+                    <img class="card-product__picture-img" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Корзинка для белья">
+                </div>
+                <div class="card-product__desc">
+                    <h2 class="card-product__name">Корзинка для белья</h2>
+                    <p class="card-product__parameters">Диаметр 15 см, высота 10 см</p>
+                    <span class="card-product__price">690 руб.</span>
+                    <a class="card-product__order-btn" href="#">В корзину</a>
+                </div>
+            </a>
+        </article>
+        <section class="catalog-modal visually-hidden">
+            <h2 class="catalog-modal__title">Добавить в корзину</h2>
+            <p class="catalog-modal__text">Выберите размер:</p>
+            <form class="catalog-modal__form" action="https://echo.htmlacademy.ru" method="GET">
+                <ul class="form-list">
+                    <li class="form-list__item">
+                        <input type="radio" name="s" id="size">
+                    </li>
+                    <li class="form-list__item">
+                        <input type="radio" name="m" id="size">
+                    </li>
+                    <li class="form-list__item">
+                        <input type="radio" name="l" id="size">
+                    </li>
+                </ul>
+                <button class="catalog-modal__order-btn" type="submit">Добавить</button>
+            </form>
+        </section>
+        <article class="card-product">
+            <a class="card-product__link" href="#">
+                <div class="card-product__picture">
+                    <img class="card-product__picture-img" src="https://via.placeholder.com/150x150" width="260" height="195" alt="Большая корзинка для игрушек">
+                </div>
+                <div class="card-product__desc">
+                    <h2 class="card-product__name">Большая корзинка для игрушек</h2>
+                    <p class="card-product__parameters">Диаметр 30 см, высота 30 см</p>
+                    <span class="card-product__price">1 500 руб.</span>
+                    <a class="card-product__order-btn" href="#">В корзину</a>
+                </div>
+            </a>
+        </article>
+        <section class="section-process">
+            <div class="section-process__video">
+                <img class="video__img" src="https://via.placeholder.com/150x150" width="260" height="150" alt="video">
+                <button class="video__btn play-btn" type="button">&#10148;</button>
+            </div>
+            <div class="section-process__desc">
+                <h2 class="section-process__title">Процесс производства</h2>
+                <p class="section-process__text">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
+                <a class="section-process__order-btn" href="#">Сделать заказ</a>
+            </div>
+        </section>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__logo-wrapper">
+            <a class="page-footer__logo" href="index.html"><img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="101" height="34" alt="MISHKA - магазин игрушек ручной работы"></a>
+        </div>
+        <ul class="page-footer__list social-list">
+            <li class="social-list__item"><a href="https://www.instagram.com">Инстограмм</a></li>
+            <li class="social-list__item"><a href="https://www.facebook.com/">Фейсбук</a></li>
+            <li class="social-list__item"><a href="https://twitter.com/">Твиттер</a></li>
+        </ul>
+        <div class="page-footer__copyright">
+            <span class="copyright__title">Разработано</span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive"><img src="https://via.placeholder.com/150x150" width="27" height="34" alt=""></a>
+        </div>
+    </footer>
+</body>
+
+</html>
