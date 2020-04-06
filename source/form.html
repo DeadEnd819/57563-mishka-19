@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Вязание на заказ - MISHKA</title>
+</head>
+
+<body>
+    <header class="page-header">
+        <a class="page-header__logo" href="index.html" aria-label="Перейти на главную страницу">
+            <img class="page-header__logo-image" src="https://via.placeholder.com/150x150" width="86" height="35" alt="MISHKA - магазин игрушек ручной работы">
+        </a>
+        <nav class="main-nav">
+            <button class="main-nav__toggle" type="button">Открыть меню</button>
+            <div class="main-nav__wrapper">
+                <ul class="main-nav__list site-list">
+                    <li class="site-list__item"><a href="catalog.html" aria-label="Перейти на страницу каталога товаров">Каталог товаров</a></li>
+                    <li class="site-list__item"><a href="#" aria-label="Текущая страница">Вязание на заказ</a></li>
+                </ul>
+                <ul class="main-nav__list user-list">
+                    <li class="user-list__item"><a href="#" aria-label="Перейти на страницу поиска">Поиск по сайту</a></li>
+                    <li class="user-list__item"><a href="#" aria-label="Перейти в корзину">Корзина: <span class="user-list__cart-status">пока пуста</span></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <main class="page-main">
+        <section class="intro">
+            <h1 class="intro__title">Вязание на заказ</h1>
+        </section>
+        <p class="page-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
+        <form class="ordering" action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="ordering__fieldset ordering-type">
+                <legend class="ordering-type__title">Тип</legend>
+                <ul class="ordering-type__list">
+                    <li class="ordering-type__item ordering-type__item--accessory">
+                        <input class="ordering-type__input--accessory" type="radio" name="type" id="accessory" value="accessory" checked>
+                        <label class="ordering-type__label--accessory" for="accessory">Аксессуар для интерьера</label>
+                    </li>
+                    <li class="ordering-type__item ordering-type__item--toy">
+                        <input class="ordering-type__input--toy" type="radio" name="type" id="toy" value="toy">
+                        <label class="ordering-type__label--toy" for="toy">Детская игрушка</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="ordering__fieldset ordering-color">
+                <legend class="ordering-color__title">Цвет</legend>
+                <ul class="ordering-color__list">
+                    <li class="ordering-color__item ordering-color__item--white">
+                        <input class="ordering-color__checkbox ordering-color__checkbox--white" type="checkbox" name="white" id="white" checked>
+                        <label class="ordering-color__name ordering-color__name--white" for="white">Белый</label>
+                    </li>
+                    <li class="ordering-color__item ordering-color__item--grey">
+                        <input class="ordering-color__checkbox ordering-color__checkbox--grey" type="checkbox" name="grey" id="grey" checked>
+                        <label class="ordering-color__name ordering-color__name--grey" for="grey">Серый</label>
+                    </li>
+                    <li class="ordering-color__item ordering-color__item--tiffany">
+                        <input class="ordering-color__checkbox ordering-color__checkbox--tiffany" type="checkbox" name="tiffany" id="tiffany">
+                        <label class="ordering-color__name ordering-color__name--tiffany" for="tiffany">«Тиффани»</label>
+                    </li>
+                    <li class="ordering-color__item ordering-color__item--black">
+                        <input class="ordering-color__checkbox ordering-color__checkbox--black" type="checkbox" name="black" id="black">
+                        <label class="ordering-color__name ordering-color__name--black" for="black">Черный</label>
+                    </li>
+                    <li class="ordering-color__item ordering-color__item--pink">
+                        <input class="ordering-color__checkbox ordering-color__checkbox--pink" type="checkbox" name="pink" id="pink">
+                        <label class="ordering-color__name ordering-color__name--pink" for="pink">Розовый</label>
+                    </li>
+                    <li class="ordering-color__item ordering-color__item--orange">
+                        <input class="ordering-color__checkbox ordering-color__checkbox--orange" type="checkbox" name="orange" id="orange">
+                        <label class="ordering-color__name ordering-color__name--orange" for="orange">Оранжевый</label>
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="ordering__fieldset ordering-passport">
+                <legend class="ordering-passport__title">ФИО</legend>
+                <ul class="ordering-passport__list">
+                    <li class="ordering-passport__item">
+                        <label class="ordering-passport__title ordering-passport__title--name" for="name">Имя</label>
+                        <input class="ordering-passport__input ordering-passport__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+                    </li>
+                    <li class="ordering-passport__item">
+                        <label class="ordering-passport__title ordering-passport__title--surname" for="surname">Фамилия</label>
+                        <input class="ordering-passport__input ordering-passport__input--surname" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
+                    </li>
+                    <li class="ordering-passport__item">
+                        <label class="ordering-passport__title ordering-passport__title--patronymic" for="patronymic">Отчество</label>
+                        <input class="ordering-passport__input ordering-passport__input--patronymic" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+                    </li>
+                </ul>
+            </fieldset>
+            <fieldset class="ordering__fieldset ordering-phone">
+                <legend class="ordering-phone__title">Тел</legend>
+                <input class="ordering-phone__input" type="tel" name="tel" placeholder="+7 XXX XXX XX XX*" required>
+            </fieldset>
+            <fieldset class="ordering__fieldset ordering-mail">
+                <legend class="ordering-mail__title">E-mail</legend>
+                <input class="ordering-mail__input" type="email" name="mail" placeholder="Ваш Email*" required>
+            </fieldset>
+            <fieldset class="ordering__fieldset ordering-wish">
+                <legend class="ordering-wish__title">Доп</legend>
+                <textarea class="ordering-wish__text" name="wish" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+            <p class="ordering__note">*Поля обязательны для заполнения</p>
+            <button class="ordering__order-btn" type="submit">Отправить заказ</button>
+        </form>
+    </main>
+    <footer class="page-footer">
+        <div class="page-footer__logo-wrapper">
+            <a class="page-footer__logo" href="index.html" aria-label="Перейти на главную страницу"><img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="101" height="34" alt="MISHKA - магазин игрушек ручной работы"></a>
+        </div>
+        <ul class="page-footer__list social-list">
+            <li class="social-list__item"><a href="https://www.instagram.com" aria-label="Наша страница в инстограмм">Инстограмм</a></li>
+            <li class="social-list__item"><a href="https://www.facebook.com/" aria-label="Наша страница в фейсбук">Фейсбук</a></li>
+            <li class="social-list__item"><a href="https://twitter.com/" aria-label="Наша страница в твиттаре">Твиттер</a></li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+            <span class="copyright__title">Разработано</span>
+            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу разработчика сайта"><img src="https://via.placeholder.com/150x150" width="27" height="34" alt="htmlacademy"></a>
+        </div>
+    </footer>
+</body>
+
+</html>
