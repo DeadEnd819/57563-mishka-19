@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Вязание на заказ - MISHKA</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
@@ -16,12 +17,12 @@
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item"><a href="catalog.html" aria-label="Перейти на страницу каталога товаров">Каталог товаров</a></li>
-                    <li class="site-list__item"><a href="#" aria-label="Текущая страница">Вязание на заказ</a></li>
+                    <li class="site-list__item"><a class="main-nav__link" href="catalog.html" aria-label="Перейти на страницу каталога товаров">Каталог товаров</a></li>
+                    <li class="site-list__item"><a class="main-nav__link" href="#" aria-label="Текущая страница">Вязание на заказ</a></li>
                 </ul>
                 <ul class="main-nav__list user-list">
-                    <li class="user-list__item"><a href="#" aria-label="Перейти на страницу поиска">Поиск по сайту</a></li>
-                    <li class="user-list__item"><a href="#" aria-label="Перейти в корзину">Корзина: <span class="user-list__cart-status">пока пуста</span></a></li>
+                    <li class="user-list__item"><a class="main-nav__link" href="#" aria-label="Перейти на страницу поиска">Поиск по сайту</a></li>
+                    <li class="user-list__item"><a class="main-nav__link" href="#" aria-label="Перейти в корзину">Корзина: <span class="user-list__cart-status">пока пуста</span></a></li>
                 </ul>
             </div>
         </nav>
@@ -31,80 +32,80 @@
             <h1 class="intro__title">Вязание на заказ</h1>
         </section>
         <p class="page-text">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа, и мы свяжемся с вами, чтобы уточнить детали.</p>
-        <form class="ordering" action="https://echo.htmlacademy.ru" method="POST">
-            <fieldset class="ordering__fieldset ordering-type">
-                <legend class="ordering-type__title">Тип</legend>
-                <ul class="ordering-type__list">
-                    <li class="ordering-type__item ordering-type__item--accessory">
-                        <input class="ordering-type__input--accessory" type="radio" name="type" id="accessory" value="accessory" checked>
-                        <label class="ordering-type__label--accessory" for="accessory">Аксессуар для интерьера</label>
+        <form class="order" action="https://echo.htmlacademy.ru" method="POST">
+            <fieldset class="order__fieldset order-type">
+                <legend class="order-type__title">Тип</legend>
+                <ul class="order-type__list">
+                    <li class="order-type__item order-type__item--accessory">
+                        <input class="order-type__input order-type__input--accessory" type="radio" name="type" id="accessory" value="accessory" checked>
+                        <label class="order-type__label order-type__label--accessory" for="accessory">Аксессуар для интерьера</label>
                     </li>
-                    <li class="ordering-type__item ordering-type__item--toy">
-                        <input class="ordering-type__input--toy" type="radio" name="type" id="toy" value="toy">
-                        <label class="ordering-type__label--toy" for="toy">Детская игрушка</label>
-                    </li>
-                </ul>
-            </fieldset>
-            <fieldset class="ordering__fieldset ordering-color">
-                <legend class="ordering-color__title">Цвет</legend>
-                <ul class="ordering-color__list">
-                    <li class="ordering-color__item ordering-color__item--white">
-                        <input class="ordering-color__checkbox ordering-color__checkbox--white" type="checkbox" name="white" id="white" checked>
-                        <label class="ordering-color__name ordering-color__name--white" for="white">Белый</label>
-                    </li>
-                    <li class="ordering-color__item ordering-color__item--grey">
-                        <input class="ordering-color__checkbox ordering-color__checkbox--grey" type="checkbox" name="grey" id="grey" checked>
-                        <label class="ordering-color__name ordering-color__name--grey" for="grey">Серый</label>
-                    </li>
-                    <li class="ordering-color__item ordering-color__item--tiffany">
-                        <input class="ordering-color__checkbox ordering-color__checkbox--tiffany" type="checkbox" name="tiffany" id="tiffany">
-                        <label class="ordering-color__name ordering-color__name--tiffany" for="tiffany">«Тиффани»</label>
-                    </li>
-                    <li class="ordering-color__item ordering-color__item--black">
-                        <input class="ordering-color__checkbox ordering-color__checkbox--black" type="checkbox" name="black" id="black">
-                        <label class="ordering-color__name ordering-color__name--black" for="black">Черный</label>
-                    </li>
-                    <li class="ordering-color__item ordering-color__item--pink">
-                        <input class="ordering-color__checkbox ordering-color__checkbox--pink" type="checkbox" name="pink" id="pink">
-                        <label class="ordering-color__name ordering-color__name--pink" for="pink">Розовый</label>
-                    </li>
-                    <li class="ordering-color__item ordering-color__item--orange">
-                        <input class="ordering-color__checkbox ordering-color__checkbox--orange" type="checkbox" name="orange" id="orange">
-                        <label class="ordering-color__name ordering-color__name--orange" for="orange">Оранжевый</label>
+                    <li class="order-type__item order-type__item--toy">
+                        <input class="order-type__input order-type__input--toy" type="radio" name="type" id="toy" value="toy">
+                        <label class="order-type__label order-type__label--toy" for="toy">Детская игрушка</label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="ordering__fieldset ordering-passport">
-                <legend class="ordering-passport__title">ФИО</legend>
-                <ul class="ordering-passport__list">
-                    <li class="ordering-passport__item">
-                        <label class="ordering-passport__title ordering-passport__title--name" for="name">Имя</label>
-                        <input class="ordering-passport__input ordering-passport__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+            <fieldset class="order__fieldset order-color">
+                <legend class="order-color__title">Цвет</legend>
+                <ul class="order-color__list">
+                    <li class="order-color__item order-color__item--white">
+                        <input class="order-color__checkbox order-color__checkbox--white" type="checkbox" name="white" id="white" checked>
+                        <label class="order-color__name order-color__name--white" for="white">Белый</label>
                     </li>
-                    <li class="ordering-passport__item">
-                        <label class="ordering-passport__title ordering-passport__title--surname" for="surname">Фамилия</label>
-                        <input class="ordering-passport__input ordering-passport__input--surname" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
+                    <li class="order-color__item order-color__item--grey">
+                        <input class="order-color__checkbox order-color__checkbox--grey" type="checkbox" name="grey" id="grey" checked>
+                        <label class="order-color__name order-color__name--grey" for="grey">Серый</label>
                     </li>
-                    <li class="ordering-passport__item">
-                        <label class="ordering-passport__title ordering-passport__title--patronymic" for="patronymic">Отчество</label>
-                        <input class="ordering-passport__input ordering-passport__input--patronymic" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+                    <li class="order-color__item order-color__item--tiffany">
+                        <input class="order-color__checkbox order-color__checkbox--tiffany" type="checkbox" name="tiffany" id="tiffany">
+                        <label class="order-color__name order-color__name--tiffany" for="tiffany">«Тиффани»</label>
+                    </li>
+                    <li class="order-color__item order-color__item--black">
+                        <input class="order-color__checkbox order-color__checkbox--black" type="checkbox" name="black" id="black">
+                        <label class="order-color__name ordercolor__name--black" for="black">Черный</label>
+                    </li>
+                    <li class="order-color__item order-color__item--pink">
+                        <input class="order-color__checkbox order-color__checkbox--pink" type="checkbox" name="pink" id="pink">
+                        <label class="order-color__name order-color__name--pink" for="pink">Розовый</label>
+                    </li>
+                    <li class="order-color__item order-color__item--orange">
+                        <input class="order-color__checkbox order-color__checkbox--orange" type="checkbox" name="orange" id="orange">
+                        <label class="order-color__name order-color__name--orange" for="orange">Оранжевый</label>
                     </li>
                 </ul>
             </fieldset>
-            <fieldset class="ordering__fieldset ordering-phone">
-                <legend class="ordering-phone__title">Тел</legend>
-                <input class="ordering-phone__input" type="tel" name="tel" placeholder="+7 XXX XXX XX XX*" required>
+            <fieldset class="order__fieldset order-passport">
+                <legend class="order-passport__title">ФИО</legend>
+                <ul class="order-passport__list">
+                    <li class="order-passport__item">
+                        <label class="order-passport__title order-passport__title--name" for="name">Имя</label>
+                        <input class="order-passport__input order-passport__input--name" type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
+                    </li>
+                    <li class="order-passport__item">
+                        <label class="order-passport__title order-passport__title--surname" for="surname">Фамилия</label>
+                        <input class="order-passport__input order-passport__input--surname" type="text" name="surname" id="surname" placeholder="Укажите фамилию">
+                    </li>
+                    <li class="order-passport__item">
+                        <label class="order-passport__title order-passport__title--patronymic" for="patronymic">Отчество</label>
+                        <input class="order-passport__input order-passport__input--patronymic" type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
+                    </li>
+                </ul>
             </fieldset>
-            <fieldset class="ordering__fieldset ordering-mail">
-                <legend class="ordering-mail__title">E-mail</legend>
-                <input class="ordering-mail__input" type="email" name="mail" placeholder="Ваш Email*" required>
+            <fieldset class="order__fieldset order-phone">
+                <legend class="order-phone__title">Тел</legend>
+                <input class="order-phone__input" type="tel" name="tel" placeholder="+7 XXX XXX XX XX*" required>
             </fieldset>
-            <fieldset class="ordering__fieldset ordering-wish">
-                <legend class="ordering-wish__title">Доп</legend>
-                <textarea class="ordering-wish__text" name="wish" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            <fieldset class="order__fieldset order-mail">
+                <legend class="order-mail__title">E-mail</legend>
+                <input class="order-mail__input" type="email" name="mail" placeholder="Ваш Email*" required>
             </fieldset>
-            <p class="ordering__note">*Поля обязательны для заполнения</p>
-            <button class="ordering__order-btn" type="submit">Отправить заказ</button>
+            <fieldset class="order__fieldset order-wish">
+                <legend class="order-wish__title">Доп</legend>
+                <textarea class="order-wish__text" name="wish" cols="30" rows="10" placeholder="Опишите все ваши пожелания к заказу"></textarea>
+            </fieldset>
+            <p class="order__note">*Поля обязательны для заполнения</p>
+            <button class="order__order-btn" type="submit">Отправить заказ</button>
         </form>
     </main>
     <footer class="page-footer">

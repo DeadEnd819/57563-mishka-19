@@ -1,0 +1,53 @@
+.categories {
+  font-family: @font__bold;
+  font-weight: bold;
+  background-color: @color__seafoam-blue;
+  background-image: url(../img/hero-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  color: @color__dark;
+  height: 373px;
+
+  &__title {
+    font-size: 2.0769rem;
+    line-height: 1.11;
+    text-align: center;
+  }
+  &__list {
+    text-align: left;
+    font-size: 1.4615rem;
+    line-height: 1.26;
+  }
+
+  &__link {
+    color: @color__white;
+  }
+
+  &__link--interior {
+    background-color: @color__seafoam-blue;
+  }
+
+  &__link--interior:hover,
+  &__link--interior:focus {
+    background-color: @color__greeny;
+  }
+
+  &__link--interior:active {
+    background-color: @color__greeny;
+    color: @color__white-alfa;
+  }
+
+  &__link--toys {
+    background-color: @color__greeny-blue;
+  }
+
+  &__link--toys:hover,
+  &__link--toys:focus {
+    background-color: @color__greeny-lite;
+  }
+
+  &__link--toys:active {
+    background-color: @color__greeny-lite;
+    color: @color__white-alfa;
+  }
+}
