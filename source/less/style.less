@@ -1,0 +1,43 @@
+@import "normalize.less";
+@import "fonts.less";
+@import "vars.less";
+
+html,
+body {
+  font-family: @font__normal;
+  font-size: 13px;
+  line-height: 24px;
+  font-weight: 400;
+  margin: 0;
+  padding: 0;
+  background-color: @color__white;
+  color: @color__black;
+}
+
+.visually-hidden {
+  position: absolute;
+  clip: rect(0 0 0 0);
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+}
+
+//----------index.html----------//
+@import "blocks/page-header.less";
+@import "blocks/main-nav.less";
+@import "blocks/sub-list.less";
+@import "blocks/categories.less";
+@import "blocks/promo.less";
+@import "blocks/about.less";
+@import "blocks/reviews.less";
+@import "blocks/slider.less";
+@import "blocks/contacts.less";
+@import "blocks/page-footer.less";
+@import "blocks/copyright.less";
+//-------index.html__END--------//
+@import "blocks/intro.less";
+//----------catalog.html----------//
+@import "blocks/card-product.less";
+@import "blocks/section-process.less";
+@import "blocks/catalog-modal.less";
+//-------catalog.html__END--------//

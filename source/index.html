@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MISHKA - магазин игрушек ручной работы</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
@@ -16,16 +17,16 @@
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item"><a href="catalog.html" aria-label="Перейти на страницу каталога товаров">Каталог товаров</a></li>
-                    <li class="site-list__item"><a href="form.html">Вязание на заказ</a></li>
+                    <li class="site-list__item"><a class="main-nav__link" href="catalog.html" aria-label="Перейти на страницу каталога товаров">Каталог товаров</a></li>
+                    <li class="site-list__item"><a class="main-nav__link" href="form.html">Вязание на заказ</a></li>
                 </ul>
                 <ul class="main-nav__list user-list">
-                    <li class="user-list__item"><a href="#" aria-label="Перейти на страницу поиска">Поиск по сайту</a></li>
-                    <li class="user-list__item"><a href="#" aria-label="Перейти в корзину">Корзина: <span class="user-list__cart-status">пока пуста</span></a></li>
+                    <li class="user-list__item"><a class="main-nav__link" href="#" aria-label="Перейти на страницу поиска">Поиск по сайту</a></li>
+                    <li class="user-list__item"><a class="main-nav__link" href="#" aria-label="Перейти в корзину">Корзина: <span class="user-list__cart-status">пока пуста</span></a></li>
                 </ul>
                 <ul class="main-nav__list sub-list">
-                    <li class="sub-list__item"><a href="#" aria-label="Перейти на страницу новых товаров">Новые поступления</a></li>
-                    <li class="sub-list__item"><a href="#" aria-label="Перейти на страницу товаров по акции">Распродажа</a></li>
+                    <li class="sub-list__item"><a class="main-nav__link" href="#" aria-label="Перейти на страницу новых товаров">Новые поступления</a></li>
+                    <li class="sub-list__item"><a class="main-nav__link" href="#" aria-label="Перейти на страницу товаров по акции">Распродажа</a></li>
                 </ul>
                 <p class="main-nav__delivery">Бесплатная доставка по России</p>
             </div>
@@ -37,8 +38,8 @@
             <h2 class="categories__title">Милые штуки ручной работы для дома</h2>
             <div class="categories__wrapper">
                 <ul class="categories__list">
-                    <li class="categories__item"><a class="categories__link" href="#" aria-label="Перейти в категорию предметов интерьера">Предметы интерьера</a></li>
-                    <li class="categories__item"><a class="categories__link" href="#" aria-label="Перейти в категорию детских игрушек">Детские игрушки</a></li>
+                    <li class="categories__item categories__item--interior"><a class="categories__link categories__link--interior" href="#" aria-label="Перейти в категорию предметов интерьера">Предметы интерьера</a></li>
+                    <li class="categories__item categories__item--toys"><a class="categories__link categories__link--toys" href="#" aria-label="Перейти в категорию детских игрушек">Детские игрушки</a></li>
                 </ul>
             </div>
         </section>
@@ -51,21 +52,21 @@
                 <p class="promo__desc">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
                 <table class="promo__grid parameters">
                     <tr class="parameters__row">
-                        <td class="parameters__col--title">Цвет:</td>
-                        <td class="parameters__col--value">«Тиффани»/серый</td>
+                        <td class="parameters__col parameters__col--title">Цвет:</td>
+                        <td class="parameters__col parameters__col--value">«Тиффани»/серый</td>
                     </tr>
                     <tr class="parameters__row">
-                        <td class="parameters__col--title">Диаметр:</td>
-                        <td class="parameters__col--value">25 см</td>
+                        <td class="parameters__col parameters__col--title">Диаметр:</td>
+                        <td class="parameters__col parameters__col--value">25 см</td>
                     </tr>
                     <tr class="parameters__row">
-                        <td class="parameters__col--title">Высота:</td>
-                        <td class="parameters__col--value">15 см</td>
+                        <td class="parameters__col parameters__col--title">Высота:</td>
+                        <td class="parameters__col parameters__col--value">15 см</td>
                     </tr>
                 </table>
             </div>
             <div class="promo__img-wrapper">
-                <img class="promo__image" src="https://via.placeholder.com/150x150" width="260" height="315" alt="Вязаные корзинки">
+                <img class="promo__image" src="https://via.placeholder.com/150x150" width="322" height="373" alt="Вязаные корзинки">
             </div>
             <div class="promo__order-wrapper">
                 <p class="promo__price">Цена: 990 руб.</p>
@@ -84,28 +85,38 @@
             </ul>
         </section>
         <section class="reviews">
-            <h2 class="reviews__title">Отзывы</h2>
-            <blockquote class="reviews__item">
-                <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильные, а также набирают больше
-                    лайков!
-                </p>
-                <cite class="reviews__about-author">
+            <div class="reviews__wrapper slider">
+                <h2 class="reviews__title">Отзывы</h2>
+                <blockquote class="reviews__item">
+                    <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильные, а также набирают
+                        больше лайков!
+                    </p>
+                    <cite class="reviews__about-author">
                   <span class="reviews__author-name">Анастасия Красильникова</span>
                   <span class="reviews__author-mail">@misssssiskras</span>
                 </cite>
-            </blockquote>
-            <p class="reviews__toggles slider__toggles">
-                <button class="slider__toggle slider__toggle--left" type="button">&lArr;</button>
-                <button class="slider__toggle slider__toggle--right" type="button">&rArr;</button>
-            </p>
-            <a class="reviews__feedback reviews__btn" href="#" aria-label="Написать отзыв">Написать</a>
+                </blockquote>
+                <p class="reviews__toggles slider__toggles">
+                    <button class="slider__toggle slider__toggle--left" type="button">
+                  <svg class="slider__svg" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                    <polygon points="50,11.002 7.659,11.002 15.833,2.828 13.005,0 0,12.998 0.003,13.001 0,13.005 13.005,26.003 15.833,23.175 7.661,15.002 50,15.002 "/>
+                  </svg>
+                </button>
+                    <button class="slider__toggle slider__toggle--right" type="button">
+                  <svg class="slider__svg" version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="50px" height="26.003px" viewBox="0 0 50 26.003" enable-background="new 0 0 50 26.003" xml:space="preserve">
+                    <polygon points="0,11.002 42.341,11.002 34.166,2.828 36.995,0 50,12.998 49.996,13.001 50,13.005 36.995,26.003 34.166,23.175 42.339,15.002 0,15.002 "/>
+                  </svg>
+                </button>
+                </p>
+                <a class="reviews__feedback slider__btn" href="#" aria-label="Написать отзыв">Написать</a>
+            </div>
         </section>
         <section class="contacts">
             <h2 class="contacts__title">Контакты</h2>
             <ul class="contacts__list">
                 <li class="contacts__item">
                     <span class="contacts__mail-title">e-mail:</span>
-                    <p class="contacts__mail-link"><a href="mailto:info@mimimishkashop.ru" aria-label="Наша почта">info@mimimishkashop.ru</a></p>
+                    <p class="contacts__link-wrap"><a class="contacts__link" href="mailto:info@mimimishkashop.ru" aria-label="Наша почта">info@mimimishkashop.ru</a></p>
                 </li>
                 <li class="contacts__item">
                     <span class="contacts__address-title">адрес:</span>
@@ -123,9 +134,9 @@
             <a class="page-footer__logo"><img class="page-footer__logo-image" src="https://via.placeholder.com/150x150" width="101" height="34" alt="MISHKA - магазин игрушек ручной работы"></a>
         </div>
         <ul class="page-footer__list social-list">
-            <li class="social__item"><a class="social__link social__link--instagram" href="https://www.instagram.com" aria-label="Наша страница в инстограмм">Инстограмм</a></li>
-            <li class="social__item"><a class="social__link social__link--facebook" href="https://www.facebook.com/" aria-label="Наша страница в фейсбук">Фейсбук</a></li>
-            <li class="social__item"><a class="social__link social__link--twitter" href="https://twitter.com/" aria-label="Наша страница в твиттаре">Твиттер</a></li>
+            <li class="social-list__item"><a href="https://www.instagram.com" aria-label="Наша страница в инстограмм">Инстограмм</a></li>
+            <li class="social-list__item"><a href="https://www.facebook.com/" aria-label="Наша страница в фейсбук">Фейсбук</a></li>
+            <li class="social-list__item"><a href="https://twitter.com/" aria-label="Наша страница в твиттаре">Твиттер</a></li>
         </ul>
         <div class="page-footer__copyright copyright">
             <span class="copyright__title">Разработано</span>

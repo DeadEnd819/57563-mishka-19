@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Каталог товаров - MISHKA</title>
+    <link rel="stylesheet" href="css/style.css" type="text/css">
 </head>
 
 <body>
@@ -16,21 +17,22 @@
             <button class="main-nav__toggle" type="button">Открыть меню</button>
             <div class="main-nav__wrapper">
                 <ul class="main-nav__list site-list">
-                    <li class="site-list__item"><a href="#" aria-label="Текущая страница">Каталог товаров</a></li>
-                    <li class="site-list__item"><a href="form.html" aria-label="Перейти на страницу оформления заказа">Вязание на заказ</a></li>
+                    <li class="site-list__item"><a class="main-nav__link" href="#" aria-label="Текущая страница">Каталог товаров</a></li>
+                    <li class="site-list__item"><a class="main-nav__link" href="form.html" aria-label="Перейти на страницу оформления заказа">Вязание на заказ</a></li>
                 </ul>
                 <ul class="main-nav__list user-list">
-                    <li class="user-list__item"><a href="#" aria-label="Перейти на страницу поиска">Поиск по сайту</a></li>
-                    <li class="user-list__item"><a href="#" aria-label="Перейти в корзину">Корзина: <span class="user-list__cart-status">пока пуста</span></a></li>
+                    <li class="user-list__item"><a class="main-nav__link" href="#" aria-label="Перейти на страницу поиска">Поиск по сайту</a></li>
+                    <li class="user-list__item"><a class="main-nav__link" href="#" aria-label="Перейти в корзину">Корзина: <span class="user-list__cart-status">пока пуста</span></a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <main class="page-main">
+        <section class="intro">
+            <h1 class="intro__title">Каталог товаров</h1>
+        </section>
         <section class="catalog">
-            <div class="catalog__wrapper">
-                <h1 class="catalog-title">Каталог товаров</h1>
-            </div>
+            <h2 class="visually-hidden">Каталог товаров - MISHKA</h2>
             <ul class="catalog__list">
                 <li class="catalog__item card-product">
                     <article class="card-product__item">
@@ -42,7 +44,7 @@
                                 <h2 class="card-product__name">Зайчик-попрыгайчик</h2>
                             </a>
                             <p class="card-product__parameters">Рост 30 см, вес 200 г</p>
-                            <div class="card-product__wrapper">
+                            <div class="card-product__order-wrapper">
                                 <span class="card-product__price">1 200 руб.</span>
                                 <a class="card-product__order-btn" href="#" aria-label="Добавить товар в корзину">В корзину</a>
                             </div>
@@ -59,7 +61,7 @@
                                 <h2 class="card-product__name">Корзинка для белья</h2>
                             </a>
                             <p class="card-product__parameters">Диаметр 15 см, высота 10 см</p>
-                            <div class="card-product__wrapper">
+                            <div class="card-product__order-wrapper">
                                 <span class="card-product__price">690 руб.</span>
                                 <a class="card-product__order-btn" href="#" aria-label="Добавить товар в корзину">В корзину</a>
                             </div>
@@ -76,7 +78,7 @@
                                 <h2 class="card-product__name">Большая корзинка для игрушек</h2>
                             </a>
                             <p class="card-product__parameters">Диаметр 30 см, высота 30 см</p>
-                            <div class="card-product__wrapper">
+                            <div class="card-product__order-wrapper">
                                 <span class="card-product__price">1 500 руб.</span>
                                 <a class="card-product__order-btn" href="#" aria-label="Добавить товар в корзину">В корзину</a>
                             </div>
@@ -111,22 +113,22 @@
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive" aria-label="Переход на страницу разработчика сайта"><img src="https://via.placeholder.com/150x150" width="27" height="34" alt=""></a>
         </div>
     </footer>
-    <section class="catalog-modal visually-hidden">
+    <section class="catalog-modal">
         <h2 class="catalog-modal__title">Добавить в корзину</h2>
         <p class="catalog-modal__text">Выберите размер:</p>
         <form class="catalog-modal__form" action="https://echo.htmlacademy.ru" method="POST">
-            <ul class="catalog-modal-list">
+            <ul class="catalog-modal__list">
                 <li class="catalog-modal__item">
                     <input class="catalog-modal__input" type="radio" value="s" id="S" name="size" checked>
-                    <label class="catalog-modal__btn" for="S">S</label>
+                    <label class="catalog-modal__btn catalog-modal__btn--s" for="S">S</label>
                 </li>
                 <li class="catalog-modal__item">
                     <input class="catalog-modal__input" type="radio" value="m" id="M" name="size">
-                    <label class="catalog-modal__btn" for="M">M</label>
+                    <label class="catalog-modal__btn catalog-modal__btn--m" for="M">M</label>
                 </li>
                 <li class="catalog-modal__item">
                     <input class="catalog-modal__input" type="radio" value="l" id="L" name="size">
-                    <label class="catalog-modal__btn" for="L">L</label>
+                    <label class="catalog-modal__btn catalog-modal__btn--l" for="L">L</label>
                 </li>
             </ul>
             <button class="catalog-modal__order-btn" type="submit">Добавить</button>
