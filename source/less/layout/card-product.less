@@ -1,0 +1,41 @@
+.card-product {
+  &:hover,
+  &:focus {
+    box-shadow: 0 6px 10px 0 rgba(0, 0, 0, 0.1);
+  }
+
+  &:active {
+    box-shadow: 0 3px 5px 0 rgba(0, 0, 0, 0.1);
+  }
+}
+
+.card-product__item {
+  border: 1px solid @color__white-two;
+}
+
+.card-product__link--name {
+  color: @color__black;
+}
+
+.card-product__name {
+  font-weight: bold;
+  font-size: 1.3077rem;
+  line-height: 1.41;
+}
+
+.card-product__parameters,
+.card-product__parameters:hover,
+.card-product__parameters:focus,
+.card-product__parameters:active {
+  font-family: @font__normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 2.31;
+  color: @color__dark-grey;
+}
+
+.card-product__price {
+  font-weight: bold;
+  font-size: 1.1538rem;
+  line-height: 1.6;
+}

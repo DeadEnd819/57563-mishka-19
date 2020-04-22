@@ -1,0 +1,59 @@
+.catalog-modal__title {
+  font-weight: bold;
+  font-size: 1.9231rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
+
+.catalog-modal__text {
+  font-family: @font__normal;
+  font-weight: normal;
+  font-size: 1.1538rem;
+  line-height: 2;
+}
+
+.catalog-modal__list {
+  display: flex;
+}
+
+.catalog-modal__input {
+  display: none;
+}
+
+.catalog-modal__btn {
+  font-weight: bold;
+  font-size: 1.3077rem;
+  text-transform: uppercase;
+  line-height: 0.94;
+  color: @color__dark-grey;
+  border: 2px solid rgba(68, 68, 68, 0.1);
+}
+
+.catalog-modal__input:checked + .catalog-modal__btn {
+  border: 2px solid #62d1ba;
+}
+
+.catalog-modal__btn:hover,
+.catalog-modal__btn:focus {
+  border: 2px solid rgba(68, 68, 68, 0.3);
+}
+
+.catalog-modal__order-btn {
+  font-weight: bold;
+  font-size: 1.3077rem;
+  text-transform: uppercase;
+  line-height: 0.94;
+  background-color: @color__seafoam-blue;
+  color: @color__white;
+  border: none;
+}
+
+.catalog-modal__order-btn:hover,
+.catalog-modal__order-btn:focus {
+  background-color: @color__dark-lite;
+  color: @color__white;
+}
+
+.catalog-modal__order-btn:active {
+  color: @color__white-alfa;
+}

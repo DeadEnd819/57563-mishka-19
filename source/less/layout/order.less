@@ -1,0 +1,50 @@
+.order {
+  font-family: @font__normal;
+  font-weight: bold;
+  font-size: 1.3077rem;
+  line-height: 1.06;
+}
+
+.order__fieldset {
+  border: none;
+}
+
+.order-type__order-title,
+.order-color__order-title,
+.order-passport__order-title,
+.order-phone__order-title,
+.order-mail__order-title,
+.order-wish__order-title {
+  line-height: 0.94;
+  color: @color__seafoam-blue;
+}
+
+.order-passport__input,
+.order-phone__input,
+.order-mail__input {
+  border: none;
+  box-shadow: inset 0px -2px 0 0 @color__black;
+
+  &::placeholder {
+    color: @color__grey-alfa;
+  }
+}
+
+.order-phone__input {
+  &::placeholder {
+    font-size: 1.4615rem;
+    line-height: 0.95;
+  }
+}
+
+.order-wish__text {
+  &::placeholder {
+    color: @color__grey-alfa;
+  }
+}
+
+.order__note {
+  font-weight: normal;
+  font-size: 1.0769rem;
+  line-height: 1.14;
+}

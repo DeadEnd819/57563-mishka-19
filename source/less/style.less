@@ -1,43 +1,32 @@
-@import "normalize.less";
-@import "fonts.less";
-@import "vars.less";
-
-html,
-body {
-  font-family: @font__normal;
-  font-size: 13px;
-  line-height: 24px;
-  font-weight: 400;
-  margin: 0;
-  padding: 0;
-  background-color: @color__white;
-  color: @color__black;
-}
-
-.visually-hidden {
-  position: absolute;
-  clip: rect(0 0 0 0);
-  width: 1px;
-  height: 1px;
-  margin: -1px;
-}
-
+@import "libs/normalize.less";
+@import "base/fonts.less";
+@import "utils/variables.less";
+@import "base/global.less";
+//------------------------------//
+@import "layout/container.less";
 //----------index.html----------//
-@import "blocks/page-header.less";
-@import "blocks/main-nav.less";
-@import "blocks/sub-list.less";
-@import "blocks/categories.less";
-@import "blocks/promo.less";
-@import "blocks/about.less";
-@import "blocks/reviews.less";
-@import "blocks/slider.less";
-@import "blocks/contacts.less";
-@import "blocks/page-footer.less";
-@import "blocks/copyright.less";
+@import "layout/page-header.less";
+@import "layout/main-nav.less";
+@import "layout/site-list.less";
+@import "layout/user-list.less";
+@import "layout/sub-list.less";
+@import "layout/categories.less";
+@import "layout/promo.less";
+@import "components/parameters.less";
+@import "layout/about.less";
+@import "layout/reviews.less";
+@import "layout/slider.less";
+@import "layout/contacts.less";
+@import "layout/page-footer.less";
+@import "layout/social-list.less";
+@import "layout/copyright.less";
 //-------index.html__END--------//
-@import "blocks/intro.less";
+@import "layout/intro.less";
 //----------catalog.html----------//
-@import "blocks/card-product.less";
-@import "blocks/section-process.less";
-@import "blocks/catalog-modal.less";
+@import "layout/card-product.less";
+@import "layout/section-process.less";
+@import "components/catalog-modal.less";
 //-------catalog.html__END--------//
+//----------form.html----------//
+@import "layout/order.less";
+//-------form.html__END--------//
