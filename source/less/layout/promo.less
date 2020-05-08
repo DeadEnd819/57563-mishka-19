@@ -1,0 +1,136 @@
+.promo {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  font-family: @font__bold;
+  font-weight: bold;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 7px;
+    bottom: -36px;
+    left: 0;
+    width: 320px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-size: 350px 7px;
+  }
+}
+
+.promo__wrapper-title {
+  display: flex;
+  flex-direction: column-reverse;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.promo__title,
+.promo__order-btn {
+  font-size: 1.3077rem;
+  line-height: 1.18;
+}
+
+.promo__title {
+  margin-top: 4px;
+  color: @color__seafoam-blue;
+}
+
+.promo__name {
+  margin-top: 32px;
+  margin-bottom: 4px;
+  font-size: 1.9231rem;
+  line-height: 1.2;
+}
+
+.promo__wrapper-desc {
+  width: 250px;
+  margin: 0 auto;
+  margin-bottom: 28px;
+}
+
+.promo__desc,
+.promo__grid {
+  font-family: @font__normal;
+  font-weight: normal;
+  font-size: 1.1538rem;
+  line-height: 1.6;
+}
+
+.promo__desc {
+  margin-top: 10px;
+}
+
+.promo__grid {
+  border-collapse: collapse;
+  line-height: 1.33;
+}
+
+.promo__price {
+  font-size: 1.3077rem;
+  line-height: 1.41;
+}
+
+.promo__order-wrapper {
+  text-align: center;
+}
+
+.promo__order-btn {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 16px 84px;
+  text-transform: uppercase;
+  background-color: @color__white;
+  color: @color__dark-lite;
+  border: 2px solid @color__dark-lite;
+}
+
+.promo__order-btn:hover,
+.promo__order-btn:focus,
+.promo__order-btn:active {
+  background-color: @color__dark-lite;
+  color: @color__white;
+}
+
+.promo__order-btn:active {
+  color: @color__white-alfa;
+}
+
+@media (min-width: @tablet-width) {
+  .promo {
+    position: relative;
+  }
+
+  .promo__wrapper-title {
+    flex-direction: row-reverse;
+    width: 100%;
+    margin-left: 30px;
+  }
+
+  .promo__title,
+  .promo__name {
+    .reset-text();
+  }
+
+  .promo__title {
+    margin-top: 5px;
+    margin-right: 80px;
+  }
+
+  .promo__name {
+    margin-right: 150px;
+  }
+
+  .promo__wrapper-desc {
+    margin: 0;
+  }
+
+  .promo__img-wrapper {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+
+  .promo__order-wrapper {
+    text-align: left;
+  }
+}

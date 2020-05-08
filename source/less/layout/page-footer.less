@@ -1,0 +1,27 @@
+.page-footer {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  min-height: 160px;
+  background-color: @color__grey;
+}
+
+.page-footer__logo-wrapper {
+  display: none;
+}
+
+.page-footer__list {
+  display: flex;
+}
+
+@media (min-width: @tablet-width) {
+  .page-footer {
+    flex-direction: row;
+  }
+
+  .page-footer__logo-wrapper {
+    display: block;
+  }
+}
