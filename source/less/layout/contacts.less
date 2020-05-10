@@ -80,3 +80,26 @@
 .contacts__image-wrapper {
   margin-bottom: 34px;
 }
+
+@media (min-width: @tablet-width) {
+  .contacts-wrapper {
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      right: 47px;
+      width: 47px;
+      height: 81px;
+      background-image: url("../../img/icon-flag.svg");
+    }
+  }
+
+  .contacts__list {
+    display: flex;
+  }
+
+  .contacts__address-wrap {
+    width: 200px;
+  }
+}
