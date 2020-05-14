@@ -5,8 +5,8 @@
 .main-nav__toggle {
   display: block;
   position: absolute;
-  top: -50px;
-  right: 5px;
+  top: -54px;
+  right: 24px;
   background-color: transparent;
   border: none;
 }
@@ -18,8 +18,8 @@
 
 .main-nav__link {
   display: block;
-  text-align: center;
-  height: 79px;
+  height: 78px;
+  padding-left: 77px;
   color: @color__black;
   border-bottom: 1px solid @color__white-two;
 }
@@ -34,8 +34,13 @@
 
 .main-nav__search-svg,
 .main-nav__basket-svg {
-  margin-left: -5px;
+  margin-left: -48px;
+  padding-right: 25px;
   opacity: 0.2;
+}
+
+.main-nav__basket-svg {
+  margin-left: -50px;
 }
 
 .main-nav__delivery {
@@ -52,6 +57,8 @@
   }
 
   .main-nav__link {
+    text-align: center;
+    padding-left: 0;
     border-bottom: none;
 
     &--search {
@@ -96,6 +103,10 @@
 @media (min-width: @desktop-width) {
   .main-nav__wrapper {
     display: flex;
+  }
+
+  .main-nav__link {
+    height: 100%;
   }
 
   .main-nav__delivery {

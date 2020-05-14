@@ -5,3 +5,44 @@
 .catalog__item {
   margin-bottom: 30px;
 }
+
+@media (min-width: @tablet-width) {
+  .catalog {
+    position: relative;
+    margin: 0;
+    margin: 67px 40px 53px 40px;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 768px;
+      height: 24px;
+      top: -78px;
+      left: -52px;
+      background: url(../../img/bg-zigzag-fill.svg);
+      background-size: 120%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .catalog__item {
+    margin-bottom: 54px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog::before {
+    width: 1200px;
+    top: -86px;
+    background-size: 100%;
+  }
+
+  .catalog__list {
+    display: flex;
+  }
+
+  .catalog__item {
+    margin-right: 50px;
+  }
+}
