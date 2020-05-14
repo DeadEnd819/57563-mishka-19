@@ -36,10 +36,6 @@
   line-height: 1.41;
 }
 
-.card-product__parameters {
-  .reset-text();
-}
-
 .card-product__parameters::after {
   content: "";
   display: block;
@@ -51,6 +47,7 @@
 }
 
 .card-product__parameters {
+  .reset-text();
   font-family: @font__normal;
   font-weight: normal;
   font-size: 1rem;
@@ -81,7 +78,7 @@
   }
 
   .card-product__name {
-    font-size: 	1.5385rem;
+    font-size: 1.5385rem;
     line-height: 1.2;
   }
 
@@ -144,5 +141,5 @@
 
   .card-product--toys .card-product__parameters::after {
     bottom: -37px;
-}
+  }
 }
