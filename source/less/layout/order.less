@@ -243,3 +243,50 @@
 .order__order-btn:active {
   color: @color__white-alfa;
 }
+
+@media (min-width: @tablet-width) {
+  .order {
+    margin: 0;
+  }
+
+  .order-type__list,
+  .order-color__list,
+  .order-passport__list {
+    margin-left: 187px;
+  }
+
+  .order-color {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .order-color__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 498px;
+  }
+
+  .order-color__item {
+    margin-right: 100px;
+  }
+
+  .order__text {
+    width: 612px;
+    font-size: 1.3077rem;
+    line-height: 1.76;
+  }
+
+  .order-color,
+  .order-phone,
+  .order-phone__input,
+  .order-mail,
+  .order-mail__input,
+  .order__contacts-wrapper {
+    background-color: @color__grey;
+  }
+
+  .order__legend::after {
+    display: none;
+  }
+}
