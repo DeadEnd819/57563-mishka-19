@@ -16,6 +16,10 @@
   display: inline-block;
   vertical-align: middle;
   padding-top: 22px;
+
+  &--main {
+    cursor: default;
+  }
 }
 
 @media (min-width: @tablet-width) {
@@ -31,6 +35,7 @@
   }
 
   .page-header__logo {
+    padding-top: 22px;
     padding-right: 149px;
   }
 }
@@ -43,5 +48,9 @@
   .page-header__logo-wrapper {
     position: absolute;
     left: 470px;
+  }
+
+  .page-header__logo {
+    padding-top: 9px;
   }
 }

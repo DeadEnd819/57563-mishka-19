@@ -63,7 +63,7 @@
     position: relative;
     min-height: 457px;
     padding-top: 44px;
-    background-image: url("../../img/review@1x.jpg");
+    background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
 
     &::after {
@@ -93,5 +93,17 @@
     position: absolute;
     right: 47px;
     bottom: 130px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .reviews {
+    margin-bottom: 100px;
+  }
+
+  .reviews__wrapper::after {
+    height: 23px;
+    background-size: 100% 23px;
+    opacity: 0.5;
   }
 }

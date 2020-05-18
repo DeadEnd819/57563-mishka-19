@@ -31,6 +31,7 @@
 
 .order__legend {
   position: relative;
+  text-transform: uppercase;
 }
 
 .order__legend::after {
@@ -86,11 +87,11 @@
 
 .order-type__item {
   margin-bottom: 25px;
-}
 
-.order-type__item--accessory {
-  width: 200px;
-  margin-top: 35px;
+  &--accessory {
+    width: 200px;
+    margin-top: 35px;
+  }
 }
 
 .order-type__input,
@@ -146,7 +147,7 @@
   top: -11px;
   width: 36px;
   height: 36px;
-  border: 2px solid @color__black;
+  border: 2px solid @color__dark-grey;
 }
 
 .order-color__checkbox[type="checkbox"]:checked + .order-color__name::after {
@@ -158,6 +159,7 @@
   width: 28px;
   height: 24px;
   background: url("../../img/icon-tick.svg");
+  background-repeat: no-repeat;
   transform: scale(0.8);
 }
 
@@ -242,4 +244,379 @@
 
 .order__order-btn:active {
   color: @color__white-alfa;
+}
+
+/*==============================================================================================================================================*/
+
+@media (min-width: @tablet-width) {
+  .order {
+    position: relative;
+    margin: 0;
+
+    &::before {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 768px;
+      height: 24px;
+      top: -84px;
+      background: url("../img/bg-zigzag-fill.svg");
+      background-size: 120%;
+      background-repeat: no-repeat;
+    }
+  }
+
+  .order__form {
+    position: relative;
+    padding-top: 20px;
+  }
+
+  .order-passport {
+    margin-top: 60px;
+    margin-bottom: 20px;
+  }
+
+  .order-type__label,
+  .order-color__name,
+  .order-passport__title {
+    font-size: 1.4615rem;
+    line-height: 0.95;
+  }
+
+  .order-passport__title {
+    &--name {
+      margin-right: 24px;
+    }
+
+    &--surname {
+      margin-right: 31px;
+    }
+
+    &--patronymic {
+      margin-right: 30px;
+    }
+  }
+
+  .order-type__list,
+  .order-color__list,
+  .order-passport__list {
+    /*margin-left: 187px;*/
+  }
+
+  .order-type__item {
+    &--accessory {
+      margin-bottom: 57px;
+    }
+
+    &--toy {
+      margin-bottom: 66px;
+    }
+  }
+
+  .order-type__label {
+    &--accessory {
+      width: 251px;
+    }
+  }
+
+  .order-color {
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+
+  .order-color__order-title {
+    padding-top: 8px;
+  }
+
+  .order-color__name {
+    padding-top: 6px;
+    padding-left: 84px;
+  }
+
+  .order-color__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 504px;
+  }
+
+  .order-color__item {
+    margin-bottom: 64px;
+
+    &--grey {
+      margin-left: 100px;
+    }
+
+    &--black {
+      margin-left: 55px;
+    }
+
+    &--pink {
+      margin-bottom: 15px;
+    }
+
+    &--orange {
+      margin-left: 79px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .order__text {
+    width: 612px;
+    margin-top: 60px;
+    margin-left: 50px;
+    font-size: 1.3077rem;
+    line-height: 1.76;
+  }
+
+  .order-color,
+  .order-phone,
+  .order-phone__input,
+  .order-mail,
+  .order-mail__input,
+  .order__contacts-wrapper {
+    background-color: @color__grey;
+  }
+
+  .order-passport__input::placeholder,
+  .order-phone__input::placeholder,
+  .order-mail__input::placeholder,
+  .order-wish__text::placeholder {
+    padding-left: 20px;
+    font-size: 1.4615rem;
+    line-height: 0.95;
+  }
+
+  .order-wish__text::placeholder {
+    padding-top: 20px;
+  }
+
+  .order-passport__item {
+    flex-direction: row;
+    margin-bottom: 30px;
+  }
+
+  .order-passport__input {
+    width: 375px;
+
+    &--name {
+      width: 428px;
+    }
+  }
+
+  .order__contacts-wrapper {
+    padding-top: 30px;
+    padding-bottom: 50px;
+  }
+
+  .order-phone {
+    margin-bottom: 6px;
+  }
+
+  .order-phone__input,
+  .order-mail__input {
+    width: 501px;
+    height: 52px;
+    padding-bottom: 0;
+  }
+
+  .order-phone__order-title {
+    margin-right: 132px;
+  }
+
+  .order-phone::after {
+    top: 15px;
+    right: 55px;
+  }
+
+  .order-mail::after {
+    top: 13px;
+    right: 51px;
+  }
+
+  .order__legend {
+    margin-left: 50px;
+    margin-right: 130px;
+  }
+
+  .order__legend::after {
+    display: none;
+  }
+
+  .order-type__order-title {
+    margin-top: 36px;
+    margin-right: 155px;
+  }
+
+  .order-mail__order-title {
+    margin-right: 107px;
+  }
+
+  .order__fieldset-wrapper {
+    display: flex;
+  }
+
+  .order-type__input[type="radio"] + .order-type__label::before {
+    top: -17px;
+    left: -20px;
+    width: 52px;
+    height: 52px;
+  }
+
+  .order-type__input[type="radio"]:checked + .order-type__label::after {
+    top: 0;
+    left: -3px;
+    width: 22px;
+    height: 22px;
+  }
+
+  .order-color__checkbox[type="checkbox"] + .order-color__name::before {
+    width: 54px;
+    height: 52px;
+  }
+
+  .order-color__checkbox[type="checkbox"]:checked + .order-color__name::after {
+    top: 5px;
+    left: 15px;
+    width: 33px;
+    height: 24px;
+    transform: scale(1);
+  }
+
+  .order-wish__order-title {
+    margin-top: 40px;
+  }
+
+  .order-wish__text {
+    width: 501px;
+    height: 142px;
+    margin-top: 60px;
+  }
+
+  .order__note {
+    margin-top: 70px;
+    margin-bottom: 68px;
+    padding-left: 425px;
+    font-size: 1.3077rem;
+    line-height: 1.76;
+  }
+
+  .order__order-btn {
+    position: absolute;
+    left: 50px;
+    bottom: -52px;
+    width: 230px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order::before {
+    width: 100%;
+    top: -124px;
+    background-size: 100%;
+  }
+
+  .order__text {
+    width: 671px;
+    margin-top: 100px;
+    margin-left: 225px;
+  }
+
+  .order-type__order-title {
+    margin-right: 96px;
+  }
+
+  .order-color {
+    padding-bottom: 0;
+  }
+
+  .order-color__order-title {
+    margin-right: 71px;
+  }
+
+  .order-color__list {
+    width: 836px;
+  }
+
+  .order-color__item {
+    &--grey {
+      margin-left: 140px;
+    }
+
+    &--tiffany {
+      margin-left: 124px;
+    }
+
+    &--black {
+      margin-left: 0;
+    }
+
+    &--pink {
+      margin-left: 126px;
+    }
+
+    &--orange {
+      margin-left: 104px;
+    }
+  }
+
+  .order-passport__order-title {
+    margin-top: 22px;
+    margin-right: 76px;
+  }
+
+  .order-passport__input {
+    &--name {
+      width: 626px;
+    }
+
+    &--surname {
+      width: 573px;
+    }
+
+    &--patronymic {
+      width: 573px;
+    }
+  }
+
+  .order-phone__order-title {
+    margin-right: 82px;
+  }
+
+  .order-mail__order-title {
+    margin-right: 55px;
+  }
+
+  .order__legend {
+    margin-left: 112px;
+  }
+
+  .order-phone__input,
+  .order-mail__input {
+    width: 700px;
+  }
+
+  .order-phone::after {
+    right: 235px;
+  }
+
+  .order-mail::after {
+    right: 235px;
+  }
+
+  .order-wish__order-title {
+    margin-right: 74px;
+  }
+
+  .order-wish__text {
+    width: 700px;
+  }
+
+  .order__note {
+    padding-left: 630px;
+  }
+
+  .order__order-btn {
+    left: 225px;
+  }
 }

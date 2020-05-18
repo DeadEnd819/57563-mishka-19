@@ -60,6 +60,10 @@
   margin-top: 10px;
 }
 
+.promo__img-wrapper {
+  padding-left: 30px;
+}
+
 .promo__grid {
   border-collapse: collapse;
   line-height: 1.33;
@@ -98,7 +102,8 @@
 @media (min-width: @tablet-width) {
   .promo {
     position: relative;
-    height: 450px;
+    min-height: 550px;
+    color: @color__dark-grey;
 
     &::after {
       width: 100%;
@@ -111,6 +116,7 @@
     flex-direction: row-reverse;
     width: 100%;
     margin-left: 30px;
+    padding-bottom: 30px;
   }
 
   .promo__title,
@@ -119,25 +125,106 @@
   }
 
   .promo__title {
-    margin-top: 5px;
-    margin-right: 80px;
+    width: 70px;
+    margin-top: 10px;
+    margin-right: 90px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
   }
 
   .promo__name {
     margin-right: 150px;
+    font-size: 3.3077rem;
+    line-height: 1.16;
+    color: @color__black;
   }
 
   .promo__wrapper-desc {
+    width: 292px;
     margin: 0;
+    margin-left: 40px;
+  }
+
+  .promo__desc {
+    margin-bottom: 40px;
+    font-size: 1.3077rem;
+    line-height: 1.76;
   }
 
   .promo__img-wrapper {
     position: absolute;
-    top: 30px;
+    top: 90px;
     right: 30px;
   }
 
   .promo__order-wrapper {
-    text-align: left;
+    width: 292px;
+    margin-top: 50px;
+    margin-left: 40px;
+  }
+
+  .promo__order-btn {
+    padding-left: 100px;
+    padding-right: 99px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo {
+    min-height: 655px;
+    padding-top: 100px;
+  }
+
+  .promo__img-wrapper {
+    top: 50px;
+  }
+
+  .promo::after {
+    bottom: -20px;
+    height: 23px;
+    background-size: 100% 23px;
+    opacity: 0.5;
+  }
+
+  .promo__wrapper-title {
+    z-index: 1;
+  }
+
+  .promo__title {
+    order: 1;
+    width: 70px;
+    padding-top: 10px;
+    font-size: 1.3077rem;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: center;
+  }
+
+  .promo__name {
+    margin-right: 415px;
+    font-size: 4.0769rem;
+    line-height: 1.08;
+  }
+
+  .promo__wrapper-desc,
+  .promo__order-wrapper {
+    margin-top: 50px;
+    margin-left: 245px;
+  }
+
+  .promo__grid {
+    font-size: 1.1538rem;
+    line-height: 1.33;
+  }
+
+  .promo__order-wrapper {
+    width: 292px;
+    text-align: center;
+  }
+
+  .promo__price {
+    font-size: 1.5385rem;
+    line-height: 1.2;
   }
 }
