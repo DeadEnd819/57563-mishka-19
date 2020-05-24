@@ -28,6 +28,15 @@
   color: @color__black;
 }
 
+.card-product__link--name:hover .card-product__name,
+.card-product__link--name:focus .card-product__name {
+  opacity: 0.6;
+}
+
+.card-product__link--name:active .card-product__name {
+  opacity: 0.3
+}
+
 .card-product__name {
   .reset-text();
   margin-bottom: 7px;
@@ -76,6 +85,16 @@
   padding-top: 30px;
   padding-right: 25px;
   opacity: 0.2;
+}
+
+.card-product__order-btn:hover .card-product__basket-path,
+.card-product__order-btn:focus .card-product__basket-path {
+  fill: @color__seafoam-blue;
+}
+
+.card-product__order-btn:active .card-product__basket-path {
+  fill: @color__seafoam-blue;
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {

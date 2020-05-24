@@ -16,6 +16,19 @@
   display: flex;
 }
 
+.page-footer__logo:hover .page-footer__logo-svg,
+.page-footer__logo:focus .page-footer__logo-svg,
+.social-list__link:hover .social-list__path,
+.social-list__link:focus .social-list__path {
+  fill: @color__greeny-lite;
+}
+
+.page-footer__logo:active .page-footer__logo-svg,
+.social-list__link:active .social-list__path {
+  fill: @color__greeny-lite;
+  opacity: 0.3;
+}
+
 @media (min-width: @tablet-width) {
   .page-footer {
     flex-direction: row;

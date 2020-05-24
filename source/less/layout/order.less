@@ -145,6 +145,16 @@
   border-radius: 50%;
 }
 
+.order-type__input[type="radio"]:hover + .order-type__label::before,
+.order-type__input[type="radio"]:focus + .order-type__label::before {
+  border-color: @seafoam-lite;
+}
+
+.order-type__input[type="radio"]:active + .order-type__label::before {
+  border-color: @color__dark-grey;
+  opacity: 0.3;
+}
+
 .order-type__input[type="radio"]:checked + .order-type__label::after {
   content: "";
   display: block;
@@ -183,6 +193,16 @@
   width: 36px;
   height: 35px;
   border: 2px solid @color__dark-grey;
+}
+
+.order-color__checkbox[type="checkbox"]:hover + .order-color__name::before,
+.order-color__checkbox[type="checkbox"]:focus + .order-color__name::before {
+  border-color: @seafoam-lite;
+}
+
+.order-color__checkbox[type="checkbox"]:active + .order-color__name::before {
+  border-color: @color__dark-grey;
+  opacity: 0.3;
 }
 
 .order-color__checkbox[type="checkbox"]:checked + .order-color__name::after {
@@ -299,6 +319,26 @@
 
 .order__order-btn:active {
   color: @color__white-alfa;
+}
+
+.order-passport__input:hover,
+.order-passport__input:focus,
+.order-passport__input:active,
+.order-phone__input:hover,
+.order-phone__input:focus,
+.order-phone__input:active,
+.order-mail__input:hover,
+.order-mail__input:focus,
+.order-mail__input:active, {
+  outline: none;
+  box-shadow: inset 0 -2px 0 0 @seafoam-lite;
+}
+
+.order-wish__text:hover,
+.order-wish__text:focus,
+.order-wish__text:active {
+  outline: none;
+  border: 2px solid @seafoam-lite;
 }
 
 @media (min-width: @tablet-width) {
