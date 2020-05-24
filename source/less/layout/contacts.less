@@ -72,6 +72,7 @@
 
 .contacts__link:active {
   color: @color__greny-alfa;
+  border-color: @color__greny-alfa;
 }
 
 .contacts__address-wrap {
@@ -239,28 +240,5 @@
   .contacts__image-wrapper::after {
     top: 146px;
     right: 218px;
-  }
-}
-
-@media (min-width: @tablet-width) {
-  .contacts-wrapper {
-    position: relative;
-
-    &::before {
-      content: "";
-      position: absolute;
-      right: 47px;
-      width: 47px;
-      height: 81px;
-      background-image: url("../../img/icon-flag.svg");
-    }
-  }
-
-  .contacts__list {
-    display: flex;
-  }
-
-  .contacts__address-wrap {
-    width: 200px;
   }
 }

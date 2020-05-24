@@ -141,6 +141,7 @@
   }
 
   .categories__link {
+    position: relative;
     min-width: 298px;
     padding-top: 28px;
     padding-bottom: 30px;
@@ -150,13 +151,11 @@
   }
 
   .categories__link--interior:hover,
-  .categories__link--interior:focus {
-    box-shadow: 0 -5px 0 0 #59d5bc;
-  }
-
+  .categories__link--interior:focus,
   .categories__link--toys:hover,
   .categories__link--toys:focus {
-    box-shadow: 0 -5px 0 0 #46c1ae;
+    top: -5px;
+    padding-bottom: 35px;
   }
 
   .categories__link--interior::after {
