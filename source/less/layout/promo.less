@@ -67,6 +67,10 @@
   padding-left: 30px;
 }
 
+.promo__img-wrapper {
+  padding-left: 30px;
+}
+
 .promo__grid {
   border-collapse: collapse;
   line-height: 1.33;
@@ -249,5 +253,13 @@
   .promo__price {
     font-size: 1.5385rem;
     line-height: 1.2;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .promo::after {
+    height: 23px;
+    background-size: 100% 23px;
+    opacity: 0.5;
   }
 }
