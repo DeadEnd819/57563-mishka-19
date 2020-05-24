@@ -13,8 +13,15 @@
   border: 1px solid @color__white-two;
 }
 
-.card-product__link--picture {
-  display: block;
+.card-product__link {
+  &--picture {
+    display: block;
+    height: 332px;
+  }
+
+  &--name {
+    color: @color__black;
+  }
 }
 
 .card-product__desc {
@@ -24,17 +31,13 @@
   margin-bottom: -3px;
 }
 
-.card-product__link--name {
-  color: @color__black;
-}
-
 .card-product__link--name:hover .card-product__name,
 .card-product__link--name:focus .card-product__name {
   opacity: 0.6;
 }
 
 .card-product__link--name:active .card-product__name {
-  opacity: 0.3
+  opacity: 0.3;
 }
 
 .card-product__name {
@@ -162,18 +165,14 @@
     margin-right: -25px;
   }
 
-  .card-product__link {
-    height: 332px;
-  }
-
   .card-product--toys .card-product__name {
     width: 207px;
     margin-top: -4px;
   }
 
   .card-product--toys .card-product__price {
-    margin-top: 9px;
-    margin-left: 5px;
+    margin-top: 10px;
+    margin-left: 2px;
   }
 }
 
@@ -223,7 +222,9 @@
     padding-top: 27px;
   }
 
-  .card-product__link--picture {
-    height: 462px;
+  .card-product__link {
+    &--picture {
+      height: 462px;
+    }
   }
 }

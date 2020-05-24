@@ -1,0 +1,190 @@
+.order-color__order-title {
+  margin-bottom: 35px;
+  padding-top: 18px;
+  line-height: 0.94;
+  color: @color__seafoam-blue;
+}
+
+.order-color__checkbox {
+  display: none;
+}
+
+.order-color__name {
+  display: block;
+  position: relative;
+  padding-left: 63px;
+  letter-spacing: 1px;
+}
+
+.order-color__list {
+  padding-top: 2px;
+}
+
+.order-color__item {
+  margin-bottom: 43px;
+}
+
+.order-color__checkbox[type="checkbox"] + .order-color__name::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -11px;
+  width: 36px;
+  height: 35px;
+  border: 2px solid @color__dark-grey;
+}
+
+.order-color__checkbox[type="checkbox"]:hover + .order-color__name::before,
+.order-color__checkbox[type="checkbox"]:focus + .order-color__name::before {
+  border-color: @seafoam-lite;
+}
+
+.order-color__checkbox[type="checkbox"]:active + .order-color__name::before {
+  border-color: @color__dark-grey;
+  opacity: 0.3;
+}
+
+.order-color__checkbox[type="checkbox"]:checked + .order-color__name::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: -2px;
+  left: 4px;
+  width: 28px;
+  height: 24px;
+  background: url("../img/icon-tick.svg");
+  background-repeat: no-repeat;
+  transform: scale(0.8);
+}
+
+@media (min-width: @tablet-width) {
+  .order-color__name {
+    padding-top: 5px;
+    padding-left: 81px;
+    font-size: 1.4615rem;
+    line-height: 0.95;
+  }
+
+  .order-color {
+    padding-top: 49px;
+    padding-bottom: 53px;
+    background-color: @color__grey;
+  }
+
+  .order-color__list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 504px;
+    margin-top: 12px;
+    margin-left: 1px;
+  }
+
+  .order-color__item {
+    margin-bottom: 53px;
+
+    &--grey {
+      margin-left: 117px;
+    }
+
+    &--tiffany {
+      margin-bottom: 53px;
+    }
+
+    &--black {
+      margin-left: 67px;
+    }
+
+    &--pink {
+      margin-bottom: 15px;
+    }
+
+    &--orange {
+      margin-left: 93px;
+      margin-bottom: 15px;
+    }
+  }
+
+  .order-color__order-title {
+    margin-top: 3px;
+    margin-left: 40px;
+    margin-right: 122px;
+  }
+
+  .order-color__checkbox[type="checkbox"] + .order-color__name::before {
+    width: 50px;
+    height: 48px;
+  }
+
+  .order-color__checkbox[type="checkbox"]:checked + .order-color__name::after {
+    top: 5px;
+    left: 11px;
+    width: 33px;
+    height: 24px;
+    transform: scale(1);
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-color {
+    padding-bottom: 0;
+  }
+
+  .order-color__order-title {
+    margin-left: 112px;
+    margin-right: 69px;
+  }
+
+  .order-color__list {
+    width: 798px;
+    margin-top: 11px;
+  }
+
+  .order-color__item {
+    margin-bottom: 53px;
+
+    &--grey {
+      margin-left: 117px;
+    }
+
+    &--tiffany {
+      margin-left: 118px;
+    }
+
+    &--black {
+      margin-left: 0;
+      margin-bottom: 51px;
+    }
+
+    &--pink {
+      margin-left: 102px;
+    }
+
+    &--orange {
+      margin-left: 95px;
+    }
+  }
+
+  .order-color__name {
+    &--white {
+      padding-left: 80px;
+      padding-top: 2px;
+    }
+
+    &--grey {
+      padding-top: 3px;
+      padding-left: 80px;
+    }
+
+    &--tiffany {
+      padding-top: 5px;
+      padding-left: 82px;
+    }
+
+    &--black {
+      padding-left: 80px;
+      margin-bottom: 18px;
+    }
+  }
+}

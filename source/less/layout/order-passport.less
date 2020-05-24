@@ -1,0 +1,133 @@
+.order-passport__order-title {
+  margin-top: -1px;
+  margin-bottom: 5px;
+  line-height: 0.94;
+  color: @color__seafoam-blue;
+}
+
+.order-passport__input {
+  width: 100%;
+  margin-top: 4px;
+  padding-bottom: 18px;
+  border: none;
+  box-shadow: inset 0 -2px 0 0 @color__black;
+
+  &::placeholder {
+    color: @color__grey-alfa;
+  }
+
+  &--name {
+    padding-bottom: 17px;
+    margin-bottom: 1px;
+  }
+}
+
+.order-passport__list {
+  margin-top: 10px;
+}
+
+.order-passport__item {
+  display: flex;
+  flex-direction: column;
+}
+
+.order-passport__title, {
+  margin-top: 21px;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+.order-passport__input:hover,
+.order-passport__input:focus,
+.order-passport__input:active {
+  outline: none;
+  box-shadow: inset 0 -2px 0 0 @seafoam-lite;
+}
+
+@media (min-width: @tablet-width) {
+  .order-passport {
+    margin-top: 57px;
+    margin-bottom: 20px;
+  }
+
+  .order-passport__title {
+    margin-top: 12px;
+    font-size: 1.4615rem;
+    line-height: 0.95;
+
+    &--name {
+      margin-right: 24px;
+    }
+
+    &--surname {
+      margin-right: 31px;
+    }
+
+    &--patronymic {
+      margin-right: 30px;
+    }
+  }
+
+  .order-passport__input::placeholder {
+    padding-left: 20px;
+    font-size: 1.4615rem;
+    line-height: 0.95;
+  }
+
+  .order-passport__list {
+    margin-top: -3px;
+  }
+
+  .order-passport__item {
+    flex-direction: row;
+    margin-bottom: 27px;
+  }
+
+  .order-passport__input {
+    width: 375px;
+    margin-top: 11px;
+    margin-left: -4px;
+
+    &--name {
+      width: 428px;
+      margin-left: 0;
+    }
+
+    &--patronymic {
+      width: 375px;
+      margin-left: -5px;
+    }
+  }
+
+  .order-passport__order-title {
+    margin-left: 40px;
+    margin-right: 126px;
+    margin-top: 11px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-passport__list {
+    margin-top: -4px;
+  }
+
+  .order-passport__order-title {
+    margin-top: 11px;
+    margin-left: 112px;
+    margin-right: 76px;
+  }
+
+  .order-passport__input {
+    &--name {
+      width: 626px;
+    }
+
+    &--surname {
+      width: 573px;
+    }
+
+    &--patronymic {
+      width: 573px;
+    }
+  }
+}
