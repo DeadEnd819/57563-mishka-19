@@ -6,8 +6,8 @@
   .site-list {
     display: flex;
     position: absolute;
-    top: 80px;
-    left: -317px;
+    top: 81px;
+    left: -357px;
     z-index: 1;
   }
 
@@ -22,18 +22,20 @@
     position: static;
   }
 
-  .site-list__item--right {
-    padding-left: 35px;
-    padding-right: 280px;
-    border-left: 1px solid @color__white-two;
-  }
-
   .site-list__item {
+    margin-left: 49px;
     font-size: 1.3077rem;
     line-height: 1.41;
+
+    &--right {
+      margin-left: 36px;
+      padding-left: 35px;
+      padding-right: 325px;
+      border-left: 1px solid @color__white-two;
+    }
   }
 
   .site-list__link {
-    padding-top: 30px;
+    padding-top: 31px;
   }
 }

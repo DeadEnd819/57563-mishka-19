@@ -1,5 +1,6 @@
 .catalog {
   margin: 30px;
+  margin-top: 29px;
 }
 
 .catalog__item {
@@ -9,7 +10,7 @@
 @media (min-width: @tablet-width) {
   .catalog {
     position: relative;
-    margin: 67px 40px 53px 40px;
+    margin: 78px 39px 53px 39px;
 
     &::before {
       content: "";
@@ -17,24 +18,29 @@
       position: absolute;
       width: 768px;
       height: 24px;
-      top: -78px;
+      top: -91px;
       left: -52px;
       background: url("../img/bg-zigzag-fill.svg");
-      background-size: 120%;
+      background-size: 768px 24px;
       background-repeat: no-repeat;
     }
   }
 
   .catalog__item {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .catalog {
+    margin: 127px 28px 53px 47px;
+  }
+
   .catalog::before {
     width: 1200px;
-    top: -86px;
-    background-size: 100%;
+    top: -145px;
+    left: -47px;
+    background-size: 1150px;
   }
 
   .catalog__list {

@@ -50,8 +50,8 @@
                         </li>
                     </ul>
                     <ul class="main-nav__list sub-list">
-                        <li class="sub-list__item"><a class="main-nav__link" href="#" aria-label="Перейти на страницу новых товаров">Новые поступления</a></li>
-                        <li class="sub-list__item"><a class="main-nav__link" href="#" aria-label="Перейти на страницу товаров по акции">Распродажа</a></li>
+                        <li class="sub-list__item sub-list__item--left"><a class="main-nav__link" href="#" aria-label="Перейти на страницу новых товаров">Новые поступления</a></li>
+                        <li class="sub-list__item sub-list__item--right"><a class="main-nav__link" href="#" aria-label="Перейти на страницу товаров по акции">Распродажа</a></li>
                     </ul>
                     <p class="main-nav__delivery">Бесплатная доставка по России</p>
                 </div>
@@ -117,7 +117,7 @@
                 <div class="reviews__wrapper slider">
                     <h2 class="reviews__title">Отзывы</h2>
                     <blockquote class="reviews__item">
-                        <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке и мои фотографии сразу стали более стильные, а также набирают
+                        <p class="reviews__text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают
                             больше лайков!
                         </p>
                         <cite class="reviews__about-author">
@@ -148,7 +148,7 @@
                             <span class="contacts__mail-title">e-mail:</span>
                             <p class="contacts__link-wrap"><a class="contacts__link" href="mailto:info@mimimishkashop.ru" aria-label="Наша почта">info@mimimishkashop.ru</a></p>
                         </li>
-                        <li class="contacts__item">
+                        <li class="contacts__item contacts__item--address">
                             <span class="contacts__address-title">адрес:</span>
                             <div class="contacts__address-wrap"><address class="contacts__address-link">г. Санкт-Петербург,<br> ул. Большая Конюшенная,<br> д. 19/8, офис 101</address></div>
                         </li>
@@ -213,26 +213,29 @@
                 </a>
             </div>
         </footer>
-        <section class="catalog-modal">
-            <h2 class="catalog-modal__title">Добавить в корзину</h2>
-            <p class="catalog-modal__text">Выберите размер:</p>
-            <form class="catalog-modal__form" action="https://echo.htmlacademy.ru" method="POST">
-                <ul class="catalog-modal__list">
-                    <li class="catalog-modal__item">
-                        <input class="catalog-modal__input" type="radio" value="s" id="S" name="size" checked>
-                        <label class="catalog-modal__btn catalog-modal__btn--s" for="S">S</label>
-                    </li>
-                    <li class="catalog-modal__item">
-                        <input class="catalog-modal__input" type="radio" value="m" id="M" name="size">
-                        <label class="catalog-modal__btn catalog-modal__btn--m" for="M">M</label>
-                    </li>
-                    <li class="catalog-modal__item">
-                        <input class="catalog-modal__input" type="radio" value="l" id="L" name="size">
-                        <label class="catalog-modal__btn catalog-modal__btn--l" for="L">L</label>
-                    </li>
-                </ul>
-                <button class="catalog-modal__order-btn" type="submit">Добавить</button>
-            </form>
+        <section class="catalog-modal catalog-modal__close">
+            <div class="catalog-modal__block"></div>
+            <div class="catalog-modal__wrapper">
+                <h2 class="catalog-modal__title">Добавить в корзину</h2>
+                <p class="catalog-modal__text">Выберите размер:</p>
+                <form class="catalog-modal__form" action="https://echo.htmlacademy.ru" method="POST">
+                    <ul class="catalog-modal__list">
+                        <li class="catalog-modal__item">
+                            <input class="catalog-modal__input" type="radio" value="s" id="S" name="size" checked>
+                            <label class="catalog-modal__btn catalog-modal__btn--s" for="S">S</label>
+                        </li>
+                        <li class="catalog-modal__item">
+                            <input class="catalog-modal__input" type="radio" value="m" id="M" name="size">
+                            <label class="catalog-modal__btn catalog-modal__btn--m" for="M">M</label>
+                        </li>
+                        <li class="catalog-modal__item">
+                            <input class="catalog-modal__input" type="radio" value="l" id="L" name="size">
+                            <label class="catalog-modal__btn catalog-modal__btn--l" for="L">L</label>
+                        </li>
+                    </ul>
+                    <button class="catalog-modal__order-btn" type="submit">Добавить</button>
+                </form>
+            </div>
         </section>
     </div>
 </body>

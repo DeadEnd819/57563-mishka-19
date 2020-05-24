@@ -21,7 +21,7 @@
   width: 204px;
   margin: 0 auto;
   margin-top: 20px;
-  margin-bottom: 25px;
+  margin-bottom: -3px;
 }
 
 .card-product__link--name {
@@ -34,6 +34,7 @@
   font-weight: bold;
   font-size: 1.3077rem;
   line-height: 1.41;
+  letter-spacing: 1px;
 }
 
 .card-product__parameters::after {
@@ -56,6 +57,9 @@
 }
 
 .card-product__price {
+  display: inline-block;
+  vertical-align: middle;
+  margin-top: 5px;
   font-weight: bold;
   font-size: 1.1538rem;
   line-height: 1.6;
@@ -65,31 +69,45 @@
   margin-left: 113px;
 }
 
+.card-product__basket-svg {
+  margin-left: 72px;
+  margin-top: -52px;
+  margin-bottom: 27px;
+  padding-top: 30px;
+  padding-right: 25px;
+  opacity: 0.2;
+}
+
 @media (min-width: @tablet-width) {
   .card-product__item {
     display: flex;
   }
 
   .card-product__desc {
-    width: 274px;
+    width: 277px;
     margin: 0;
-    padding: 29px 32px 15px 28px;
+    padding: 25px 29px 15px 26px;
   }
 
   .card-product__name {
+    margin-bottom: 5px;
+    margin-left: 2px;
     font-size: 1.5385rem;
     line-height: 1.2;
+    letter-spacing: 1.2px;
   }
 
   .card-product__parameters {
     position: relative;
+    margin-left: 1px;
     font-size: 1.1538rem;
     line-height: 2;
 
     &::after {
       position: absolute;
-      width: 274px;
-      bottom: -175px;
+      width: 268px;
+      left: 7px;
+      bottom: -193px;
     }
   }
 
@@ -100,6 +118,8 @@
   }
 
   .card-product__price {
+    margin-top: 13px;
+    margin-left: 5px;
     font-size: 1.3077rem;
     line-height: 1.41;
   }
@@ -118,8 +138,23 @@
     right: 0;
   }
 
-  .card-product__link--picture {
-    height: 330px;
+  .card-product__basket-svg {
+    margin-top: -17px;
+    margin-right: -25px;
+  }
+
+  .card-product__link {
+    height: 332px;
+  }
+
+  .card-product--toys .card-product__name {
+    width: 207px;
+    margin-top: -4px;
+  }
+
+  .card-product--toys .card-product__price {
+    margin-top: 9px;
+    margin-left: 5px;
   }
 }
 
@@ -138,8 +173,23 @@
     margin-top: 73px;
   }
 
+  .card-product__price {
+    margin-top: -28px;
+    margin-left: 2px;
+  }
+
+  .card-product__basket-svg {
+    padding-top: 6px;
+    padding-right: 44px;
+  }
+
+  .card-product--toys .card-product__desc {
+    margin-top: 4px;
+    margin-left: -2px;
+  }
+
   .card-product--toys .card-product__order-wrapper {
-    margin-top: 48px;
+    margin-top: 28px;
   }
 
   .card-product--toys .card-product__parameters::after {

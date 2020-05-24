@@ -1,13 +1,18 @@
 .copyright {
   display: flex;
   align-items: center;
-  margin-top: 15px;
-  margin-bottom: -15px;
+  margin-top: 9px;
+  margin-bottom: -7px;
 }
 
 .copyright__link {
   margin-top: 10px;
-  margin-left: 10px;
+  margin-left: 23px;
+  margin-right: 17px;
+}
+
+.copyright__title {
+  margin-left: 23px;
 }
 
 .copyright__title,
@@ -21,4 +26,18 @@
 
 .copyright__title:active {
   opacity: 0.3;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin-top: -21px;
+    margin-left: 42px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .copyright {
+    margin-top: -29px;
+    margin-left: 218px;
+  }
 }

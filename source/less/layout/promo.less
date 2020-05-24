@@ -9,10 +9,11 @@
     content: "";
     position: absolute;
     height: 7px;
-    bottom: -36px;
+    bottom: -43px;
     left: 0;
     width: 320px;
     background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
     background-size: 350px 7px;
   }
 }
@@ -21,7 +22,7 @@
   display: flex;
   flex-direction: column-reverse;
   width: 250px;
-  margin: 0 auto;
+  margin-left: 31px;
 }
 
 .promo__title,
@@ -33,10 +34,11 @@
 .promo__title {
   margin-top: 4px;
   color: @color__seafoam-blue;
+  text-transform: uppercase;
 }
 
 .promo__name {
-  margin-top: 32px;
+  margin-top: 25px;
   margin-bottom: 4px;
   font-size: 1.9231rem;
   line-height: 1.2;
@@ -44,7 +46,7 @@
 
 .promo__wrapper-desc {
   width: 250px;
-  margin: 0 auto;
+  margin-left: 31px;
   margin-bottom: 28px;
 }
 
@@ -57,7 +59,8 @@
 }
 
 .promo__desc {
-  margin-top: 10px;
+  margin-top: 7px;
+  margin-bottom: 20px;
 }
 
 .promo__img-wrapper {
@@ -81,7 +84,8 @@
 .promo__order-btn {
   display: inline-block;
   vertical-align: middle;
-  padding: 16px 84px;
+  margin-top: 11px;
+  padding: 14px 83px;
   text-transform: uppercase;
   background-color: @color__white;
   color: @color__dark-lite;
@@ -106,16 +110,18 @@
     color: @color__dark-grey;
 
     &::after {
-      width: 100%;
+      bottom: -29px;
+      left: -97px;
+      width: 116%;
       height: 15px;
-      background-size: 771px 15px;
+      background-size: 750px 15px;
     }
   }
 
   .promo__wrapper-title {
     flex-direction: row-reverse;
     width: 100%;
-    margin-left: 30px;
+    margin-left: 33px;
     padding-bottom: 30px;
   }
 
@@ -126,15 +132,15 @@
 
   .promo__title {
     width: 70px;
-    margin-top: 10px;
-    margin-right: 90px;
+    margin-top: 11px;
+    margin-right: 99px;
     line-height: 1;
     text-transform: uppercase;
     text-align: center;
   }
 
   .promo__name {
-    margin-right: 150px;
+    margin-right: 146px;
     font-size: 3.3077rem;
     line-height: 1.16;
     color: @color__black;
@@ -143,7 +149,8 @@
   .promo__wrapper-desc {
     width: 292px;
     margin: 0;
-    margin-left: 40px;
+    margin-top: 14px;
+    margin-left: 38px;
   }
 
   .promo__desc {
@@ -154,17 +161,23 @@
 
   .promo__img-wrapper {
     position: absolute;
-    top: 90px;
-    right: 30px;
+    top: 107px;
+    right: 39px;
   }
 
   .promo__order-wrapper {
     width: 292px;
-    margin-top: 50px;
-    margin-left: 40px;
+    margin-top: 37px;
+    margin-left: 36px;
+  }
+
+  .promo__price {
+    font-size: 1.5385rem;
+    line-height: 1.2;
   }
 
   .promo__order-btn {
+    margin-top: 14px;
     padding-left: 100px;
     padding-right: 99px;
   }
@@ -177,24 +190,33 @@
   }
 
   .promo__img-wrapper {
-    top: 50px;
+    top: 26px;
+    right: 50px;
   }
 
   .promo::after {
-    bottom: -20px;
+    bottom: -2px;
     height: 23px;
     background-size: 100% 23px;
     opacity: 0.5;
   }
 
   .promo__wrapper-title {
+    margin-top: -22px;
+    margin-left: 12px;
+    padding-bottom: 47px;
     z-index: 1;
+  }
+
+  .promo__desc {
+    margin-bottom: 52px;
   }
 
   .promo__title {
     order: 1;
     width: 70px;
-    padding-top: 10px;
+    padding-top: 5px;
+    margin-right: 54px;
     font-size: 1.3077rem;
     line-height: 1;
     text-transform: uppercase;
@@ -209,11 +231,12 @@
 
   .promo__wrapper-desc,
   .promo__order-wrapper {
-    margin-top: 50px;
-    margin-left: 245px;
+    margin-top: -4px;
+    margin-left: 225px;
   }
 
   .promo__grid {
+    margin-bottom: 95px;
     font-size: 1.1538rem;
     line-height: 1.33;
   }
