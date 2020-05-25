@@ -1,17 +1,22 @@
 .contacts-wrapper {
-  margin-bottom: 42px;
-  padding-right: 36px;
-  padding-left: 30px;
+  margin-bottom: 40px;
+  margin-left: 30px;
 }
 
 .contacts__title {
   font-weight: bold;
   font-size: 1.3846rem;
   line-height: 1.67;
+  letter-spacing: 0.06em;
+}
+
+.contacts__list {
+  margin-top: -3px;
 }
 
 .contacts__item {
   display: flex;
+  margin-top: 29px;
   font-family: @font__normal;
   font-weight: normal;
   font-style: normal;
@@ -25,7 +30,7 @@
   width: 260px;
   margin: 0 auto;
   margin-bottom: 39px;
-  padding-top: 13px;
+  padding-top: 14px;
   padding-bottom: 15px;
   text-align: center;
   font-family: @font__bold;
@@ -35,6 +40,7 @@
   text-transform: uppercase;
   background-color: @color__white;
   color: @color__dark-lite;
+  box-sizing: border-box;
   border: 2px solid @color__dark-lite;
 }
 
@@ -51,11 +57,12 @@
 
 .contacts__link-wrap {
   margin: 0;
-  margin-left: 26px;
+  margin-left: 30px;
 }
 
 .contacts__link {
   color: @color__black;
+  border-bottom: 1px solid @color__seafoam-blue;
 }
 
 .contacts__link:hover,
@@ -65,11 +72,12 @@
 
 .contacts__link:active {
   color: @color__greny-alfa;
+  border-color: @color__greny-alfa;
 }
 
 .contacts__address-wrap {
   width: 150px;
-  margin-left: 26px;
+  margin-left: 31px;
 }
 
 .contacts__address-link {
@@ -78,28 +86,159 @@
 }
 
 .contacts__image-wrapper {
-  margin-bottom: 34px;
+  position: relative;
+  margin-bottom: 33px;
+}
+
+.contacts__image-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 143px;
+  right: 115px;
+  width: 67px;
+  height: 100px;
+  background: url("../img/icon-map-pin.svg");
+  background-repeat: no-repeat;
 }
 
 @media (min-width: @tablet-width) {
+  .contacts {
+    margin-top: 145px;
+  }
+
   .contacts-wrapper {
     position: relative;
 
     &::before {
       content: "";
       position: absolute;
-      right: 47px;
+      top: -15px;
+      right: 41px;
       width: 47px;
       height: 81px;
-      background-image: url("../../img/icon-flag.svg");
+      background-image: url("../img/icon-flag.svg");
     }
+  }
+
+  .contacts__title {
+    margin-left: 5px;
+    font-size: 3.3077rem;
+    line-height: 1.16;
+    letter-spacing: 0.06em;
   }
 
   .contacts__list {
     display: flex;
+    margin-top: -15px;
+    margin-left: 8px;
+  }
+
+  .contacts__item {
+    font-size: 1.3077rem;
+    font-weight: normal;
+    line-height: 1.76;
+  }
+
+  .contacts__link-wrap {
+    margin-left: 23px;
   }
 
   .contacts__address-wrap {
-    width: 200px;
+    width: 222px;
+    margin-left: 25px;
+  }
+
+  .contacts__address-title {
+    margin-left: 53px;
+  }
+
+  .contacts__feedback {
+    width: 230px;
+    margin-top: 48px;
+    margin-bottom: 57px;
+  }
+
+  .contacts__image-wrapper {
+    margin-top: 59px;
+
+    &::after {
+      top: 139px;
+      right: 326px;
+    }
+  }
+
+  .contacts__image {
+    height: 457px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts {
+    display: flex;
+    position: relative;
+    margin-bottom: 65px;
+  }
+
+  .contacts-wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-left: 193px;
+  }
+
+  .contacts-wrapper::before {
+    top: 78px;
+    right: 0;
+    left: -80px;
+  }
+
+  .contacts__title {
+    margin-top: 86px;
+    margin-left: 28px;
+    font-size: 4.0769rem;
+    font-weight: bold;
+    line-height: 1.08;
+    letter-spacing: 2.4px;
+  }
+
+  .contacts__list {
+    display: flex;
+    flex-direction: column;
+    margin-top: -24px;
+    margin-left: 28px;
+    padding-left: 3px;
+  }
+
+  .contacts__item {
+    margin-bottom: 30px;
+
+    &--address {
+      margin-top: 1px;
+      margin-left: -53px;
+    }
+  }
+
+  .contacts__feedback {
+    position: absolute;
+    bottom: 0;
+    left: 225px;
+    margin-top: 0;
+    margin-bottom: 40px;
+    padding-bottom: 14px;
+    font-size: 1.3077rem;
+    line-height: 1.18;
+  }
+
+  .contacts__address-wrap {
+    width: 229px;
+  }
+
+  .contacts__image-wrapper {
+    margin-top: 16px;
+    margin-left: 44px;
+  }
+
+  .contacts__image-wrapper::after {
+    top: 146px;
+    right: 218px;
   }
 }

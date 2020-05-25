@@ -1,0 +1,111 @@
+.order-type__order-title {
+  line-height: 0.94;
+  color: @color__seafoam-blue;
+}
+
+.order-type__label {
+  display: block;
+  position: relative;
+  margin-top: -1px;
+  padding-left: 63px;
+  letter-spacing: 1px;
+}
+
+.order-type__list {
+  padding-top: 2px;
+}
+
+.order-type__item {
+  margin-bottom: 25px;
+
+  &--accessory {
+    width: 200px;
+    margin-top: 35px;
+  }
+}
+
+.order-type__input {
+  display: none;
+}
+
+.order-type__input[type="radio"] + .order-type__label::before {
+  content: "";
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -11px;
+  width: 36px;
+  height: 35px;
+  border: 2px solid @color__black;
+  border-radius: 50%;
+}
+
+.order-type__input[type="radio"]:hover + .order-type__label::before,
+.order-type__input[type="radio"]:focus + .order-type__label::before {
+  border-color: @seafoam-lite;
+}
+
+.order-type__input[type="radio"]:active + .order-type__label::before {
+  border-color: @color__dark-grey;
+  opacity: 0.3;
+}
+
+.order-type__input[type="radio"]:checked + .order-type__label::after {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 1px;
+  left: 12px;
+  width: 16px;
+  height: 16px;
+  background-color: @color__seafoam-blue;
+  border-radius: 50%;
+}
+
+@media (min-width: @tablet-width) {
+  .order-type__label {
+    font-size: 1.4615rem;
+    line-height: 0.95;
+
+    &--accessory {
+      width: 256px;
+    }
+  }
+
+  .order-type__item {
+    &--accessory {
+      margin-bottom: 59px;
+    }
+
+    &--toy {
+      margin-bottom: 66px;
+    }
+  }
+
+  .order-type__order-title {
+    margin-top: 38px;
+    margin-left: 40px;
+    margin-right: 148px;
+  }
+
+  .order-type__input[type="radio"] + .order-type__label::before {
+    top: -15px;
+    left: -18px;
+    width: 48px;
+    height: 48px;
+  }
+
+  .order-type__input[type="radio"]:checked + .order-type__label::after {
+    top: 1px;
+    left: -2px;
+    width: 20px;
+    height: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .order-type__order-title {
+    margin-left: 112px;
+    margin-right: 96px;
+  }
+}

@@ -16,6 +16,19 @@
   display: inline-block;
   vertical-align: middle;
   padding-top: 22px;
+
+  &--main {
+    cursor: default;
+  }
+}
+
+.page-header__logo:hover,
+.page-header__logo:focus {
+  opacity: 0.6;
+}
+
+.page-header__logo:active {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
@@ -26,13 +39,13 @@
   }
 
   .page-header__logo-wrapper {
-    min-width: 322px;
+    min-width: 358px;
     border-bottom: none;
   }
 
   .page-header__logo {
+    margin-left: -170px;
     padding-top: 22px;
-    padding-right: 149px;
   }
 }
 
@@ -43,10 +56,12 @@
 
   .page-header__logo-wrapper {
     position: absolute;
-    left: 470px;
+    min-width: 140px;
+    left: 481px;
   }
 
   .page-header__logo {
+    margin-left: 19px;
     padding-top: 9px;
   }
 }
