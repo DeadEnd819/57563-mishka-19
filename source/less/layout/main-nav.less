@@ -1,15 +1,37 @@
 .main-nav {
   position: relative;
 }
-
+//=======================================================================================
 .main-nav__toggle {
   display: block;
   position: absolute;
   top: -54px;
   right: 24px;
+  width: 21px;
+  height: 20px;
   background-color: transparent;
   border: none;
+  cursor: pointer;
+
+  &--open {
+    background-image: url("../img/icon-menu-open.svg");
+  }
+
+  &--close {
+    background-image: url("../img/icon-menu-close.svg");
+  }
 }
+
+.main-nav__toggle-hidden,
+.main-nav__menu-close {
+  display: none;
+}
+
+.main-nav__menu-open {
+  display: block;
+}
+
+//=======================================================================================
 
 .main-nav__list {
   font-size: 1.3077rem;
