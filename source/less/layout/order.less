@@ -3,6 +3,19 @@
   margin-right: 30px;
 }
 
+.order__wrapper-btn {
+  position: relative;
+  width: 320px;
+  padding: 0 1px;
+  margin: 0 auto;
+}
+
+.order__text-wrapper {
+  width: 320px;
+  padding: 0 1px;
+  margin: 0 auto;
+}
+
 .order__text {
   width: 242px;
   padding-top: 8px;
@@ -76,28 +89,33 @@
   color: @color__white-alfa;
 }
 
+.order__fieldset-wrapper {
+  position: relative;
+  width: 320px;
+  padding: 0 1px;
+  margin: 0 auto;
+}
+
 @media (min-width: @tablet-width) {
   .order {
     position: relative;
     margin: 0;
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 768px;
-      height: 24px;
-      top: -76px;
-      left: -12px;
-      background: url("../img/bg-zigzag-fill.svg");
-      background-size: 768px 24px;
-      background-repeat: no-repeat;
-    }
   }
+
+  .order__wrapper-btn {
+    width: 744px;
+    padding: 0 12px;
+  }
+
 
   .order__form {
     position: relative;
     padding-top: 10px;
+  }
+
+  .order__text-wrapper {
+    width: 744px;
+    padding: 0 12px;
   }
 
   .order__text {
@@ -126,6 +144,8 @@
 
   .order__fieldset-wrapper {
     display: flex;
+    width: 744px;
+    padding: 0 12px;
   }
 
   .order__note {
@@ -146,13 +166,15 @@
 
 
 @media (min-width: @desktop-width) {
-  .order {
-    &::before {
-      width: 100%;
-      top: -130px;
-      left: 0;
-      background-size: 1150px 34px;
-    }
+  .order__wrapper-btn {
+    width: 1150px;
+    padding: 0 25px;
+  }
+
+
+  .order__text-wrapper {
+    width: 1150px;
+    padding: 0 25px;
   }
 
   .order__text {
@@ -173,5 +195,10 @@
   .order__order-btn {
     left: 225px;
     bottom: -68px;
+  }
+
+  .order__fieldset-wrapper {
+    width: 1150px;
+    padding: 0 25px;
   }
 }

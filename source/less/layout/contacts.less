@@ -1,4 +1,11 @@
-.contacts-wrapper {
+.contacts__wrapper {
+  position: relative;
+  width: 320px;
+  padding: 0 1px;
+  margin: 0 auto;
+}
+
+.contacts__contact-wrapper {
   margin-bottom: 40px;
   margin-left: 30px;
 }
@@ -102,11 +109,13 @@
 }
 
 @media (min-width: @tablet-width) {
-  .contacts {
+  .contacts__wrapper {
+    width: 744px;
     margin-top: 145px;
+    padding: 0 12px;
   }
 
-  .contacts-wrapper {
+  .contacts__contact-wrapper {
     position: relative;
 
     &::before {
@@ -173,19 +182,21 @@
 }
 
 @media (min-width: @desktop-width) {
-  .contacts {
+  .contacts__wrapper {
     display: flex;
     position: relative;
+    width: 1150px;
+    padding: 0 25px;
     margin-bottom: 65px;
   }
 
-  .contacts-wrapper {
+  .contacts__contact-wrapper {
     display: flex;
     flex-direction: column;
     margin-left: 193px;
   }
 
-  .contacts-wrapper::before {
+  .contacts__contact-wrapper::before {
     top: 78px;
     right: 0;
     left: -80px;

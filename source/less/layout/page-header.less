@@ -5,6 +5,13 @@
   color: @color__black;
 }
 
+.page-header__wrapper {
+  position: relative;
+  width: 320px;
+  padding: 0 1px;
+  margin: 0 auto;
+}
+
 .page-header__logo-wrapper {
   min-height: 79px;
   text-align: center;
@@ -33,9 +40,14 @@
 
 @media (min-width: @tablet-width) {
   .page-header {
+    border-bottom: 1px solid @color__white-two;
+  }
+
+  .page-header__wrapper {
     display: flex;
     min-height: 88px;
-    border-bottom: 1px solid @color__white-two;
+    width: 744px;
+    padding: 0 12px;
   }
 
   .page-header__logo-wrapper {
@@ -50,8 +62,10 @@
 }
 
 @media (min-width: @desktop-width) {
-  .page-header {
+  .page-header__wrapper {
     position: relative;
+    width: 1150px;
+    padding: 0 25px;
   }
 
   .page-header__logo-wrapper {
@@ -61,7 +75,7 @@
   }
 
   .page-header__logo {
-    margin-left: 19px;
+    margin-left: 44px;
     padding-top: 9px;
   }
 }

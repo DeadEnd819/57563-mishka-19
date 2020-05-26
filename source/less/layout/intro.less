@@ -1,4 +1,5 @@
 .intro {
+  position: relative;
   min-height: 177px;
   text-align: center;
   background-color: @color__grey;
@@ -17,6 +18,19 @@
 @media (min-width: @tablet-width) {
   .intro {
     min-height: 226px;
+
+    &::after {
+      content: "";
+      display: block;
+      position: absolute;
+      width: 100%;
+      height: 24px;
+      top: 202px;
+      left: 0;
+      background: url("../img/bg-zigzag-fill.svg");
+      background-size: 1250px 43px;
+      background-repeat: repeat-x;
+    }
   }
 
   .intro__title {
@@ -31,6 +45,10 @@
 @media (min-width: @desktop-width) {
   .intro {
     min-height: 255px;
+
+    &::after {
+      top: 231px;
+    }
   }
 
   .intro__title {

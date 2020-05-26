@@ -1,3 +1,10 @@
+.order-phone {
+  position: relative;
+  width: 320px;
+  padding: 0 1px;
+  margin: 0 auto;
+}
+
 .order-phone__order-title {
   margin-bottom: 25px;
   padding-top: 32px;
@@ -44,6 +51,12 @@
 }
 
 @media (min-width: @tablet-width) {
+  .order-phone {
+    width: 744px;
+    padding: 0 12px;
+    margin-bottom: 6px;
+  }
+
   .order-phone,
   .order-phone__input {
     background-color: @color__grey;
@@ -53,10 +66,6 @@
     padding-left: 17px;
     font-size: 1.4615rem;
     line-height: 0.95;
-  }
-
-  .order-phone {
-    margin-bottom: 6px;
   }
 
   .order-phone__input {
@@ -89,7 +98,12 @@
     width: 700px;
   }
 
-  .order-phone::after {
-    right: 233px;
+  .order-phone {
+    width: 1150px;
+    padding: 0 25px;
+
+    &::after {
+      right: 233px;
+    }
   }
 }

@@ -11,19 +11,6 @@
   .catalog {
     position: relative;
     margin: 78px 39px 53px 39px;
-
-    &::before {
-      content: "";
-      display: block;
-      position: absolute;
-      width: 768px;
-      height: 24px;
-      top: -91px;
-      left: -52px;
-      background: url("../img/bg-zigzag-fill.svg");
-      background-size: 768px 24px;
-      background-repeat: no-repeat;
-    }
   }
 
   .catalog__item {
@@ -35,13 +22,6 @@
 @media (min-width: @desktop-width) {
   .catalog {
     margin: 127px 28px 53px 47px;
-  }
-
-  .catalog::before {
-    width: 1200px;
-    top: -145px;
-    left: -47px;
-    background-size: 1150px;
   }
 
   .catalog__list {

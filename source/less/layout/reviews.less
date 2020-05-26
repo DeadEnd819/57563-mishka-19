@@ -1,8 +1,8 @@
-.reviews {
+.reviews__wrapper {
   position: relative;
-  margin-left: 30px;
-  margin-right: 34px;
-  margin-bottom: 86px;
+  width: 320px;
+  padding: 0 1px;
+  margin: 0 auto;
 }
 
 .reviews__title {
@@ -50,34 +50,42 @@
   font-style: normal;
 }
 
-.reviews::after {
-  content: "";
-  position: absolute;
-  height: 6px;
-  bottom: -52px;
-  left: -35px;
-  width: 320px;
-  background-image: url("../img/bg-zigzag-line.svg");
-  background-repeat: repeat-x;
-  background-size: 78% 6px;
+.reviews {
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    height: 6px;
+    bottom: -52px;
+    left: -35px;
+    width: 100%;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: 78% 6px;
+  }
 }
 
 @media (min-width: @tablet-width) {
   .reviews {
-    margin: 0;
-    margin-top: -40px;
-    margin-bottom: 72px;
-
     &::after {
       content: "";
       position: absolute;
-      width: 120%;
+      width: 100%;
       height: 15px;
       bottom: -84px;
       left: -60px;
       background-image: url("../img/bg-zigzag-line.svg");
       background-size: 750px 15px;
     }
+  }
+
+  .reviews__wrapper {
+    width: 744px;
+    margin: auto;
+    margin-top: -40px;
+    margin-bottom: 72px;
+    padding: 0 12px;
   }
 
   .reviews__text,
@@ -96,13 +104,17 @@
     margin-top: 51px;
   }
 
-  .reviews__wrapper {
+  .reviews__wrapper-slider {
     position: relative;
     min-height: 457px;
     padding-top: 2px;
     background-image: url("../img/review@1x.jpg");
     background-repeat: no-repeat;
     background-position: -12px;
+
+    @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   .reviews__text {
@@ -136,8 +148,6 @@
 
 @media (min-width: @desktop-width) {
   .reviews {
-    margin-bottom: 100px;
-
     &::after {
       height: 23px;
       background-size: 1050px 23px;
@@ -147,6 +157,12 @@
   }
 
   .reviews__wrapper {
+    width: 1150px;
+    margin-bottom: 100px;
+    padding: 0 25px;
+  }
+
+  .reviews__wrapper-sliderr {
     background-position: 50px 9px;
     min-height: 464px;
   }

@@ -1,3 +1,10 @@
+.about__wrapper {
+  position: relative;
+  width: 320px;
+  padding: 0 1px;
+  margin: 0 auto;
+}
+
 .about__title {
   padding-top: 48px;
   margin-left: 28px;
@@ -91,6 +98,11 @@
 }
 
 @media (min-width: @tablet-width) {
+  .about__wrapper {
+    width: 744px;
+    padding: 0 12px;
+  }
+
   .about__title {
     padding-top: 43px;
     margin-left: 33px;
@@ -141,10 +153,20 @@
   .about__item--eco::before,
   .about__item--style::before {
     margin-top: 25px;
+    background-repeat: no-repeat;
+  }
+
+  .about__item--likes::before {
+    background-repeat: no-repeat;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .about__wrapper {
+    width: 1150px;
+    padding: 0 25px;
+  }
+
   .about__title {
     padding-top: 19px;
     margin-left: 221px;
@@ -180,5 +202,6 @@
   .about__item--eco::before,
   .about__item--style::before {
     margin-top: 25px;
+    background-repeat: no-repeat;
   }
 }
