@@ -3,6 +3,7 @@
   font-weight: bold;
   background-color: @color__white;
   color: @color__black;
+  border-bottom: 1px solid @color__white-two;
 }
 
 .page-header__wrapper {
@@ -15,8 +16,7 @@
 .page-header__logo-wrapper {
   min-height: 79px;
   text-align: center;
-  border-bottom: 1px solid @color__white-two;
-  z-index: 2;
+  z-index: 12;
 }
 
 .page-header__logo {
@@ -39,15 +39,12 @@
 }
 
 @media (min-width: @tablet-width) {
-  .page-header {
-    border-bottom: 1px solid @color__white-two;
-  }
-
   .page-header__wrapper {
     display: flex;
     min-height: 88px;
     width: 744px;
     padding: 0 12px;
+    z-index: 12;
   }
 
   .page-header__logo-wrapper {

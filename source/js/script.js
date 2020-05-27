@@ -10,12 +10,8 @@ btn.addEventListener("click", function(evt) {
     menu.classList.toggle('main-nav__menu-close');
 
     if (btn.classList.contains('main-nav__toggle--open')) {
-        btn.classList.remove('main-nav__toggle--open');
         btn.classList.add('main-nav__toggle--close');
-    }
-
-    if (btn.classList.contains('main-nav__toggle--close')) {
+    } else {
         btn.classList.remove('main-nav__toggle--close');
-        btn.classList.add('main-nav__toggle--open');
     }
 });

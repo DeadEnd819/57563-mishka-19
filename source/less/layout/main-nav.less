@@ -1,12 +1,16 @@
 .main-nav {
-  position: relative;
+  position: absolute;
+  top: 80px;
+  min-width: 322px;
+  z-index: 10;
+  background-color: #ffffff;
 }
-//=======================================================================================
+
 .main-nav__toggle {
   display: block;
   position: absolute;
-  top: -54px;
-  right: 24px;
+  top: -48px;
+  right: 31px;
   width: 21px;
   height: 20px;
   background-color: transparent;
@@ -33,8 +37,6 @@
 .main-nav__menu-open {
   display: block;
 }
-
-//=======================================================================================
 
 .main-nav__btn-image {
   width: 21px;
@@ -98,7 +100,10 @@
 
 @media (min-width: @tablet-width) {
   .main-nav {
+    position: relative;
+    top: 0;
     min-width: 744px;
+    background-color: #ffffff;
   }
 
   .main-nav__toggle {
